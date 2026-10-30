@@ -1,0 +1,70 @@
+{
+  "note": "Analytical examples only; no claims about measured robot performance",
+  "quintic_constant_speed": [
+    {
+      "speed": 0.5,
+      "duration": 6.4,
+      "lateral_jerk_squared_integral": 0.048447400331497185
+    },
+    {
+      "speed": 1.0,
+      "duration": 3.2,
+      "lateral_jerk_squared_integral": 1.55031681060791
+    },
+    {
+      "speed": 1.5,
+      "duration": 2.1333333333333333,
+      "lateral_jerk_squared_integral": 11.77271828055382
+    }
+  ],
+  "right_normal_curved_reference": {
+    "kappa": 1.0,
+    "offset": 0.85,
+    "desired_heading_degrees": 15,
+    "tangent_scale": 1.85,
+    "correct_d_prime": -0.495706005997577,
+    "straight_approximation_d_prime": -0.2679491924311227,
+    "resulting_heading_degrees": 8.241262639884452
+  },
+  "stopping": {
+    "speed": 1.5,
+    "deceleration": 1.2,
+    "delay": 0.12,
+    "one_robot_center_travel": 1.1175,
+    "two_robot_gap_consumption": 2.235,
+    "gap_with_additional_clearance": 2.385
+  },
+  "teb_discretization": [
+    {
+      "total_time": 2.0,
+      "intervals": 10,
+      "objective": 0.4
+    },
+    {
+      "total_time": 2.0,
+      "intervals": 20,
+      "objective": 0.2
+    }
+  ],
+  "dteb_approximate_signature": {
+    "path_a": 0.05767640904976239,
+    "path_b": 0.055765817349229856,
+    "difference": 0.001910591700532531,
+    "obstacle_velocity": 0.3,
+    "geometry": "x(t)=1+t+a*sin(pi*t), y(t)=1, obstacle=(0.3*t,0), a=0 or 0.2"
+  },
+  "prediction": {
+    "speed": 1.0,
+    "yaw_rate": 0.5,
+    "horizon": 3.0,
+    "cv_position": [
+      3.0,
+      0.0
+    ],
+    "ctrv_position": [
+      1.994989973208109,
+      1.8585255966645942
+    ],
+    "center_prediction_difference": 2.1128564900176547
+  }
+}

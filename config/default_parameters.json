@@ -1,0 +1,38 @@
+{
+  "horizon": 5,
+  "prediction_step": 0.1,
+  "rollout_step": 0.04,
+  "clearance": 0.15,
+  "tracking_margin": 0.04,
+  "tracking_recovery_time": 0.5,
+  "intent_max_age": 0.3,
+  "uncertainty_growth": 0.02,
+  "transition_length": 3.2,
+  "passing_length": 1.0,
+  "return_clearance": 0.8,
+  "lookahead": 0.6,
+  "goal_tolerance": 0.1,
+  "commitment_time": 1.0,
+  "recovery_time": 0.5,
+  "collision_resolution": 0.025,
+  "transition_scales": [1.0, 0.5],
+  "offsets": [
+    0.85,
+    0.95,
+    1.1
+  ],
+  "speed_scales": [
+    1,
+    0.65,
+    0.3
+  ],
+  "weights": {
+    "progress": 4,
+    "deviation": 0.4,
+    "speed_reduction": 1,
+    "smoothness": 0.1,
+    "clearance": 0.05,
+    "left_side": 0.8,
+    "switching": 5
+  }
+}

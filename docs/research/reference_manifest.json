@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-10-30",
+  "local_pdfs": [
+    {
+      "filename": "2012_rosmann_TEB Planner Trajectory modification considering dynamic constraints of autonomous robots [ROBOTIK 2012].pdf",
+      "sha256": "f7159031d8be8f2fa1bd6029473dd14b570193f0ac8c71477594099e36a52fbd",
+      "bytes": 444876
+    },
+    {
+      "filename": "2017_Roesmann_IROS.pdf",
+      "sha256": "fcf707c1462b59f2c33954b4d52f349fc51e021497cfc73fc9c221b018aed13a",
+      "bytes": 377708
+    },
+    {
+      "filename": "2303.11279v1.pdf",
+      "sha256": "850e3e9321e302666d5e30eea558327920fcc32cbbd9e74f82b09a48526fbbee",
+      "bytes": 1461522
+    },
+    {
+      "filename": "ORCA.pdf",
+      "sha256": "3738db18ea5d24aca1e483241db3cce1a068a7adbea4489d59b3ea542335a19a",
+      "bytes": 1675999
+    },
+    {
+      "filename": "[Werling] Optimal Trajectory Generation for Dynamic Street Scenarios in a Frenet Frame.pdf",
+      "sha256": "de9509b3a69c8bc626279ca0a4dda2c746d77c24d94bea9ed6514e5488721028",
+      "bytes": 892340
+    }
+  ]
+}
