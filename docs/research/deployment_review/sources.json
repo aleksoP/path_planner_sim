@@ -1,0 +1,3738 @@
+{
+  "review_date": "2026-11-01",
+  "scope": "69 catalog rows plus ORCA-AVO unique download-list work",
+  "reviewed_repository_commit": "8f80bfc9c0af8e976d2b4a1ed9989d303eee47e4",
+  "input_artifacts": [
+    {
+      "path": "docs/references/paper_manifest.json",
+      "sha256": "5485c295263d02922e871274bfebf3839839c7202e97d94655ef25cdb5e39c97"
+    },
+    {
+      "description": "User-supplied Check Trepella et al 2026 GPT conversation",
+      "sha256": "d1cad381bdb5888811b30cd9cd276179e3d5a22864a24e8410c5b484933ae211",
+      "bytes": 68967
+    }
+  ],
+  "distinct_works": 70,
+  "papers": 68,
+  "software_documentation_records": 2,
+  "evidence_counts": {
+    "A": 19,
+    "C": 11,
+    "B": 38,
+    "D": 2
+  },
+  "evidence_definitions": {
+    "A": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+    "B": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+    "C": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+    "D": "Versioned implementation documentation; not a research paper."
+  },
+  "external_experiments_reproduced": false,
+  "production_planner_changed": false,
+  "user_constraint": "Keep current robot parameters fixed for now; make them tunable later.",
+  "primary_target": "Perception-only navigation among unknown noncommunicating robots; cooperation optional later.",
+  "page_number_convention": "1-based PDF pages; covers included",
+  "repository_inspections": [
+    {
+      "repository": "https://github.com/PIC4SeR/sfm-nmpc",
+      "commit": "13203ca6bed824f4dd5538d1d665c7014fb5891e",
+      "built": false,
+      "files": [
+        "README.md",
+        "LICENSE",
+        "sfm_nmpc/src/optimizer.cpp",
+        "sfm_nmpc/src/people_interface.cpp",
+        "sfm_nmpc/src/critics/velocity_feasibility_cost_function.cpp"
+      ],
+      "scope": "README/license and selected controller source; not a complete code audit or compatibility test",
+      "documented_ros_distribution": "Humble",
+      "license_file_observed": "GNU GPL version 3"
+    }
+  ],
+  "removed_extra_duplicate_copies": [
+    "docs/references/03_additional_verified_pdfs/R07.pdf",
+    "docs/references/03_additional_verified_pdfs/R08.pdf",
+    "docs/references/03_additional_verified_pdfs/R10.pdf",
+    "docs/references/03_additional_verified_pdfs/R18.pdf",
+    "docs/references/03_additional_verified_pdfs/R20.pdf",
+    "docs/references/03_additional_verified_pdfs/R21.pdf",
+    "docs/references/03_additional_verified_pdfs/R27.pdf",
+    "docs/references/03_additional_verified_pdfs/R35.pdf",
+    "docs/references/03_additional_verified_pdfs/R45.pdf",
+    "docs/references/03_additional_verified_pdfs/R48.pdf",
+    "docs/references/03_additional_verified_pdfs/R53.pdf",
+    "docs/references/03_additional_verified_pdfs/R58.pdf",
+    "docs/references/03_additional_verified_pdfs/R64.pdf",
+    "docs/references/03_additional_verified_pdfs/R65.pdf",
+    "docs/references/03_additional_verified_pdfs/R66.pdf"
+  ],
+  "entries": [
+    {
+      "id": "R01",
+      "title": "Werling et al., 2010: Frenet trajectory generation",
+      "supplied_title": "Werling et al. — Optimal Trajectory Generation for Dynamic Street Scenarios in a Frenet Frame",
+      "record_url": "https://doi.org/10.1109/ROBOT.2010.5509799",
+      "metadata_title": "Optimal trajectory generation for dynamic street scenarios in a Frenét Frame",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "User PDF includes cover page; PDF page numbering differs from article numbering.",
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FROBOT.2010.5509799",
+      "metadata_request_error": null,
+      "doi": "10.1109/robot.2010.5509799",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2010,
+              5
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/01_existing_pdfs/01_Werling_2010_Frenet.pdf",
+          "sha256": "de9509b3a69c8bc626279ca0a4dda2c746d77c24d94bea9ed6514e5488721028",
+          "bytes": 892340,
+          "pdf_pages": 8,
+          "source_url": null,
+          "role": "user-provided original"
+        }
+      ],
+      "retrieval_attempts": [],
+      "primary_urls": [
+        "https://doi.org/10.1109/ROBOT.2010.5509799"
+      ]
+    },
+    {
+      "id": "R02",
+      "title": "Rösmann et al., 2012: Timed Elastic Band",
+      "supplied_title": "Rösmann et al. — Trajectory Modification Considering Dynamic Constraints of Autonomous Robots",
+      "record_url": "https://github.com/rst-tu-dortmund/teb_local_planner",
+      "metadata_title": "GitHub - rst-tu-dortmund/teb_local_planner: An optimal trajectory planner considering distinctive topologies for mobile robots based on Timed-Elastic-Bands (ROS Package) · GitHub",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "Catalog URL is the TEB repository; review concerns the original local 2012 paper.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://github.com/rst-tu-dortmund/teb_local_planner",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/01_existing_pdfs/02_Roesmann_2012_TEB.pdf",
+          "sha256": "f7159031d8be8f2fa1bd6029473dd14b570193f0ac8c71477594099e36a52fbd",
+          "bytes": 444876,
+          "pdf_pages": 6,
+          "source_url": null,
+          "role": "user-provided original"
+        }
+      ],
+      "retrieval_attempts": [],
+      "primary_urls": [
+        "https://github.com/rst-tu-dortmund/teb_local_planner"
+      ]
+    },
+    {
+      "id": "R03",
+      "title": "Rösmann et al., 2017: kinodynamic control for car-like robots",
+      "supplied_title": "Rösmann et al. — Kinodynamic Trajectory Optimization and Control for Car-Like Robots",
+      "record_url": "https://doi.org/10.1109/IROS.2017.8206458",
+      "metadata_title": null,
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "Local IROS 2017 manuscript with cover; online metadata request failed, local text reviewed.",
+      "metadata_request_status": "failed",
+      "metadata_source": null,
+      "metadata_request_error": "HTTP Error 429: Too Many Requests",
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/01_existing_pdfs/03_Roesmann_2017_TEB.pdf",
+          "sha256": "fcf707c1462b59f2c33954b4d52f349fc51e021497cfc73fc9c221b018aed13a",
+          "bytes": 377708,
+          "pdf_pages": 7,
+          "source_url": null,
+          "role": "user-provided original"
+        }
+      ],
+      "retrieval_attempts": [],
+      "primary_urls": [
+        "https://doi.org/10.1109/IROS.2017.8206458"
+      ]
+    },
+    {
+      "id": "R04",
+      "title": "Xin et al., 2022: distributed MPCC",
+      "supplied_title": "Xin et al. — Distributed Model Predictive Contouring Control for Real-Time Multi-Robot Motion Planning",
+      "record_url": "https://doi.org/10.23919/CSMS.2022.0017",
+      "metadata_title": "Distributed Model Predictive Contouring Control for Real-Time Multi-Robot Motion Planning",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.23919%2FCSMS.2022.0017",
+      "metadata_request_error": null,
+      "doi": "10.23919/csms.2022.0017",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              12
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R04.pdf",
+          "sha256": "00f561806289ec3edb653ce7c45464193adb44d1891e8b52a190b1f495e15320",
+          "bytes": 10077930,
+          "pdf_pages": 15,
+          "source_url": "https://jianbinxin.github.io/pubs/2022_CSMS.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://jianbinxin.github.io/pubs/2022_CSMS.pdf",
+          "urls": [
+            "https://jianbinxin.github.io/pubs/2022_CSMS.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R04.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.23919/CSMS.2022.0017",
+        "https://jianbinxin.github.io/pubs/2022_CSMS.pdf"
+      ]
+    },
+    {
+      "id": "R05",
+      "title": "Schöneberg et al., 2025: MPC with prediction uncertainty",
+      "supplied_title": "Schöneberg et al. — Trajectory Planning with MPC for Obstacle Avoidance Considering Prediction Uncertainty",
+      "record_url": "https://doi.org/10.1016/j.ifacol.2025.10.245",
+      "metadata_title": "Trajectory Planning with Model Predictive Control for Obstacle Avoidance Considering Prediction Uncertainty",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.ifacol.2025.10.245",
+      "metadata_request_error": null,
+      "doi": "10.1016/j.ifacol.2025.10.245",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/MPC-uncertainty.pdf",
+          "sha256": "8352b1896978bb8ec2612c33be222d5dc6cdb632ce69999cb92d25df99a9e517",
+          "bytes": 712938,
+          "pdf_pages": 6,
+          "source_url": "https://arxiv.org/pdf/2504.19193",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2504.19193",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/MPC-uncertainty.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1016/j.ifacol.2025.10.245",
+        "https://arxiv.org/pdf/2504.19193"
+      ]
+    },
+    {
+      "id": "R06",
+      "title": "Sun et al., 2025: CL-CBS with MPC-APF",
+      "supplied_title": "Sun et al. — Integrated Multi-AMR CL-CBS and MPC-APF in Warehousing",
+      "record_url": "https://doi.org/10.1016/j.simpat.2025.103122",
+      "metadata_title": "An integrated framework for Multi-AMR based CL-CBS and MPC-APF in warehousing scenario",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.simpat.2025.103122",
+      "metadata_request_error": null,
+      "doi": "10.1016/j.simpat.2025.103122",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.simpat.2025.103122"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1016/j.simpat.2025.103122"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R06",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.simpat.2025.103122",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null,
+          "any_repository_has_fulltext": false
+        },
+        "locations": []
+      }
+    },
+    {
+      "id": "R07",
+      "title": "Zhang et al.: D4orm",
+      "supplied_title": "Zhang et al. — D4orm: Multi-Robot Trajectories with Dynamics-aware Diffusion Denoised Deformations",
+      "record_url": "https://arxiv.org/abs/2503.12204",
+      "metadata_title": "[2503.12204] D4orm: Multi-Robot Trajectories with Dynamics-aware Diffusion Denoised Deformations",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "Latest downloaded arXiv revision at retrieval; review checked version history (v4, September 2026).",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2503.12204",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/D4orm.pdf",
+          "sha256": "38a19afea3fe50d35ae2244ee77a8b00084420a62769320bf08281e593807ad7",
+          "bytes": 5096894,
+          "pdf_pages": 7,
+          "source_url": "https://arxiv.org/pdf/2503.12204",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2503.12204",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/D4orm.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2503.12204",
+          "resolved_url": "https://arxiv.org/pdf/2503.12204",
+          "urls": [
+            "https://arxiv.org/pdf/2503.12204"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/D4orm.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2503.12204",
+        "https://arxiv.org/pdf/2503.12204"
+      ]
+    },
+    {
+      "id": "R08",
+      "title": "Shankar, Okumura, Prorok, 2025: LF",
+      "supplied_title": "Shankar, Okumura and Prorok — LF: Online Multi-Robot Path Planning Meets Optimal Trajectory Control",
+      "record_url": "https://arxiv.org/abs/2507.11464",
+      "metadata_title": "[2507.11464] LF: Online Multi-Robot Path Planning Meets Optimal Trajectory Control",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2507.11464",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/LF.pdf",
+          "sha256": "3f806812a5872320214f0b6f75ea811831697d7334b3762a3e21b74e618b6ace",
+          "bytes": 8889900,
+          "pdf_pages": 9,
+          "source_url": "https://arxiv.org/pdf/2507.11464",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2507.11464",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/LF.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2507.11464",
+          "resolved_url": "https://arxiv.org/pdf/2507.11464",
+          "urls": [
+            "https://arxiv.org/pdf/2507.11464"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/LF.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2507.11464",
+        "https://arxiv.org/pdf/2507.11464"
+      ]
+    },
+    {
+      "id": "R09",
+      "title": "SICNav-Diffusion, 2025",
+      "supplied_title": "Samavi et al. — SICNav-Diffusion: Safe and Interactive Crowd Navigation With Diffusion Trajectory Predictions",
+      "record_url": "https://doi.org/10.1109/LRA.2025.3585713",
+      "metadata_title": "SICNav-Diffusion: Safe and Interactive Crowd Navigation With Diffusion Trajectory Predictions",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FLRA.2025.3585713",
+      "metadata_request_error": null,
+      "doi": "10.1109/lra.2025.3585713",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              9
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/SICNav-Diffusion.pdf",
+          "sha256": "2043da78a41be8eabaf3349629bd461732175ed4c43168495d2df3cadd5e4633",
+          "bytes": 1872481,
+          "pdf_pages": 8,
+          "source_url": "https://arxiv.org/pdf/2503.08858",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2503.08858",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/SICNav-Diffusion.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/LRA.2025.3585713",
+        "https://arxiv.org/pdf/2503.08858"
+      ]
+    },
+    {
+      "id": "R10",
+      "title": "Trepella et al., 2026: SFM-NMPC",
+      "supplied_title": "Trepella et al. — Navigating the Crowd: Non-linear MPC with Social Forces Dynamics",
+      "record_url": "https://arxiv.org/abs/2607.10374",
+      "metadata_title": "[2607.10374] Navigating the Crowd: Non-linear MPC with Social Forces Dynamics for Human-Aware Robot Navigation",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2607.10374",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/Trepella.pdf",
+          "sha256": "2490cc5d645af8f690a54d107761f4ef6bd44d779b63479c82b5af771140743b",
+          "bytes": 2107953,
+          "pdf_pages": 9,
+          "source_url": "https://arxiv.org/pdf/2607.10374",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2607.10374",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Trepella.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2607.10374",
+          "resolved_url": "https://arxiv.org/pdf/2607.10374",
+          "urls": [
+            "https://arxiv.org/pdf/2607.10374"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Trepella.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2607.10374",
+        "https://arxiv.org/pdf/2607.10374"
+      ]
+    },
+    {
+      "id": "R11",
+      "title": "Decoupled time-optimized multi-robot path parameterization",
+      "supplied_title": "Sun et al. — A Decoupled Time-Optimized Multi-Robot Path Parameterization Method",
+      "record_url": "https://doi.org/10.1007/s40747-025-02110-5",
+      "metadata_title": "A decoupled time-optimized multi-robot path parameterization method",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": "Online 2025 publication and 2026 volume year are both recorded by the publisher.",
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1007%2Fs40747-025-02110-5",
+      "metadata_request_error": null,
+      "doi": "10.1007/s40747-025-02110-5",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              6
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              6
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R11.pdf",
+          "sha256": "6ce1875a49f5f59ed4f1c8caf0077602cf2497f1b722d8ab61877dd1549660ce",
+          "bytes": 2623124,
+          "pdf_pages": 12,
+          "source_url": "https://link.springer.com/content/pdf/10.1007/s40747-025-02110-5.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://link.springer.com/content/pdf/10.1007/s40747-025-02110-5.pdf",
+          "resolved_url": "https://link.springer.com/content/pdf/10.1007/s40747-025-02110-5.pdf",
+          "urls": [
+            "https://link.springer.com/content/pdf/10.1007/s40747-025-02110-5.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R11.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1007/s40747-025-02110-5",
+        "https://link.springer.com/content/pdf/10.1007/s40747-025-02110-5.pdf"
+      ]
+    },
+    {
+      "id": "R12",
+      "title": "Qu et al., 2026: safety corridors and sequential MPC",
+      "supplied_title": "Qu et al. — Safety Corridor and Pedestrian Prediction Integrated Sequential MPC",
+      "record_url": "https://doi.org/10.1177/17298806261483759",
+      "metadata_title": "Safety corridor and pedestrian prediction integrated sequential MPC for safe robot navigation in dynamic environments",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1177%2F17298806261483759",
+      "metadata_request_error": null,
+      "doi": "10.1177/17298806261483759",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              25
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "urls": [
+            "https://journals.sagepub.com/doi/pdf/10.1177/17298806261483759"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://journals.sagepub.com/doi/pdf/10.1177/17298806261483759",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ]
+        },
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1177/17298806261483759"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1177/17298806261483759"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R12",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1177/17298806261483759",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://doi.org/10.1177/17298806261483759",
+          "any_repository_has_fulltext": false
+        },
+        "locations": [
+          {
+            "pdf_url": null,
+            "landing_page_url": "https://doi.org/10.1177/17298806261483759",
+            "is_oa": true,
+            "version": "publishedVersion",
+            "license": "cc-by-nc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R13",
+      "title": "van den Berg et al.: ORCA",
+      "supplied_title": "van den Berg et al. — Reciprocal n-body Collision Avoidance (ORCA)",
+      "record_url": "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf",
+      "metadata_title": null,
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/01_existing_pdfs/05_VanDenBerg_ORCA.pdf",
+          "sha256": "3738db18ea5d24aca1e483241db3cce1a068a7adbea4489d59b3ea542335a19a",
+          "bytes": 1675999,
+          "pdf_pages": 16,
+          "source_url": null,
+          "role": "user-provided original"
+        },
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/ORCA-original.pdf",
+          "sha256": "3738db18ea5d24aca1e483241db3cce1a068a7adbea4489d59b3ea542335a19a",
+          "bytes": 1675999,
+          "pdf_pages": 16,
+          "source_url": "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/ORCA-original.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf"
+      ]
+    },
+    {
+      "id": "R14",
+      "title": "ORCA-DD: differential-drive constraints",
+      "supplied_title": "Snape et al. — ORCA for Differential-Drive Robots (ORCA-DD)",
+      "record_url": "https://gamma-web.iacs.umd.edu/ORCA-DD/",
+      "metadata_title": "Smooth and Collision-Free Navigation for Multiple Robots Under Differential-Drive Constraints (ORCA-DD)",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://gamma-web.iacs.umd.edu/ORCA-DD/",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/ORCA-DD.pdf",
+          "sha256": "3ff53961b2cfb907cdd8f796e43fa1289ce6884d1f032439306852636ca99433",
+          "bytes": 1195233,
+          "pdf_pages": 6,
+          "source_url": "https://gamma.cs.unc.edu/ORCA-DD/ORCA-DD.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://gamma.cs.unc.edu/ORCA-DD/ORCA-DD.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/ORCA-DD.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://gamma-web.iacs.umd.edu/ORCA-DD/",
+        "https://gamma.cs.unc.edu/ORCA-DD/ORCA-DD.pdf"
+      ]
+    },
+    {
+      "id": "R15",
+      "title": "Zhou et al., 2017: buffered Voronoi cells",
+      "supplied_title": "Zhou et al. — Fast On-line Collision Avoidance for Dynamic Vehicles Using Buffered Voronoi Cells",
+      "record_url": "https://msl.stanford.edu/bibliography/zhou_fast_2017",
+      "metadata_title": "Fast, On-line Collision Avoidance for Dynamic Vehicles Using Buffered Voronoi Cells",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://msl.stanford.edu/bibliography/zhou_fast_2017",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R15.pdf",
+          "sha256": "9e2c7eb3b2e7a67e0feaf34c27f94770dff68c5409f8cc6f01f5523fb4c110d9",
+          "bytes": 4682542,
+          "pdf_pages": 7,
+          "source_url": "https://msl.stanford.edu/papers/zhou_fast_2017.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://msl.stanford.edu/papers/zhou_fast_2017.pdf",
+          "urls": [
+            "https://msl.stanford.edu/papers/zhou_fast_2017.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R15.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://msl.stanford.edu/bibliography/zhou_fast_2017",
+        "https://msl.stanford.edu/papers/zhou_fast_2017.pdf"
+      ]
+    },
+    {
+      "id": "R16",
+      "title": "Wang et al., 2019: probabilistic buffered Voronoi cells",
+      "supplied_title": "Wang and Schwager — Distributed Collision Avoidance with Probabilistic Buffered Voronoi Cells",
+      "record_url": "https://msl.stanford.edu/bibliography/wang_distributed_2019",
+      "metadata_title": "Distributed Collision Avoidance of Multiple Robots with Probabilistic Buffered Voronoi Cells",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://msl.stanford.edu/bibliography/wang_distributed_2019",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R16.pdf",
+          "sha256": "df440137fce4e842241e54a17ca6c0a14f575ddf9e3bc24200ec4fd58535f717",
+          "bytes": 1627315,
+          "pdf_pages": 7,
+          "source_url": "https://msl.stanford.edu/papers/wang_distributed_2019.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://msl.stanford.edu/papers/wang_distributed_2019.pdf",
+          "urls": [
+            "https://msl.stanford.edu/papers/wang_distributed_2019.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R16.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://msl.stanford.edu/bibliography/wang_distributed_2019",
+        "https://msl.stanford.edu/papers/wang_distributed_2019.pdf"
+      ]
+    },
+    {
+      "id": "R17",
+      "title": "Zhu et al., 2022: B-UAVC",
+      "supplied_title": "Zhu, Brito and Alonso-Mora — Decentralized Probabilistic Multi-Robot Collision Avoidance with Buffered Uncertainty-aware Voronoi Cells",
+      "record_url": "https://github.com/tud-amr/mrca_vc",
+      "metadata_title": "GitHub - tud-amr/mrca_vc: Multi-robot collision avoidance using buffered uncertainty-aware Voronoi cells · GitHub",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://github.com/tud-amr/mrca_vc",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R17.pdf",
+          "sha256": "6de59654091de1bdf388f1544c00e7ce4be1236f2b1aad89dfd682c7897e2e83",
+          "bytes": 7788136,
+          "pdf_pages": 20,
+          "source_url": "https://autonomousrobots.nl/assets/files/publications/22_zhu_auro.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://autonomousrobots.nl/assets/files/publications/22_zhu_auro.pdf",
+          "urls": [
+            "https://autonomousrobots.nl/assets/files/publications/22_zhu_auro.pdf",
+            "https://arxiv.org/pdf/2201.04012"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R17.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://github.com/tud-amr/mrca_vc",
+        "https://autonomousrobots.nl/assets/files/publications/22_zhu_auro.pdf"
+      ]
+    },
+    {
+      "id": "R18",
+      "title": "EGO-Swarm",
+      "supplied_title": "Zhou et al. — EGO-Swarm: Fully Autonomous and Decentralized Quadrotor Swarm",
+      "record_url": "https://arxiv.org/abs/2011.04183",
+      "metadata_title": "[2011.04183] EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2011.04183",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/EGO-Swarm.pdf",
+          "sha256": "3fe008fa358dfff54c0d5ea632a7f6f3baa74339f7f8fe766383fc9343743ff5",
+          "bytes": 3758079,
+          "pdf_pages": 7,
+          "source_url": "https://arxiv.org/pdf/2011.04183",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2011.04183",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/EGO-Swarm.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2011.04183",
+          "resolved_url": "https://arxiv.org/pdf/2011.04183",
+          "urls": [
+            "https://arxiv.org/pdf/2011.04183"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/EGO-Swarm.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2011.04183",
+        "https://arxiv.org/pdf/2011.04183"
+      ]
+    },
+    {
+      "id": "R19",
+      "title": "MADER",
+      "supplied_title": "Tordesillas et al. — MADER: Trajectory Planner in Multiagent and Dynamic Environments",
+      "record_url": "https://doi.org/10.1109/TRO.2021.3080235",
+      "metadata_title": "MADER: Trajectory Planner in Multiagent and Dynamic Environments",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FTRO.2021.3080235",
+      "metadata_request_error": null,
+      "doi": "10.1109/tro.2021.3080235",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              2
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R19.pdf",
+          "sha256": "ab7fea98bb46cc0bffce968797886a754c36df2a7027cb5242d3eeed6a64633d",
+          "bytes": 19070294,
+          "pdf_pages": 15,
+          "source_url": "https://arxiv.org/pdf/2010.11061",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2010.11061",
+          "urls": [
+            "https://arxiv.org/pdf/2010.11061"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R19.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/TRO.2021.3080235",
+        "https://arxiv.org/pdf/2010.11061"
+      ]
+    },
+    {
+      "id": "R20",
+      "title": "RMADER",
+      "supplied_title": "Kondo et al. — Robust MADER: Decentralized Multiagent Trajectory Planner Robust to Communication Delay",
+      "record_url": "https://arxiv.org/abs/2303.06222",
+      "metadata_title": "[2303.06222] Robust MADER: Decentralized Multiagent Trajectory Planner Robust to Communication Delay in Dynamic Environments",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2303.06222",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/RMADER.pdf",
+          "sha256": "8779863a046392fceb8136ac5509fb078da62e627e42ca31ecf11b2641b7151f",
+          "bytes": 5798090,
+          "pdf_pages": 8,
+          "source_url": "https://arxiv.org/pdf/2303.06222",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2303.06222",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/RMADER.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2303.06222",
+          "resolved_url": "https://arxiv.org/pdf/2303.06222",
+          "urls": [
+            "https://arxiv.org/pdf/2303.06222"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/RMADER.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2303.06222",
+        "https://arxiv.org/pdf/2303.06222"
+      ]
+    },
+    {
+      "id": "R21",
+      "title": "DTEB",
+      "supplied_title": "Chung et al. — Distributed Timed Elastic Band (DTEB) Planner",
+      "record_url": "https://arxiv.org/abs/2303.11279",
+      "metadata_title": "[2303.11279] Distributed Timed Elastic Band (DTEB) Planner: Trajectory Sharing and Collision Prediction for Multi-Robot Systems",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "ICRA 2022 paper; public arXiv manuscript uploaded in 2023.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2303.11279",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/01_existing_pdfs/04_Chung_2022_DTEB.pdf",
+          "sha256": "850e3e9321e302666d5e30eea558327920fcc32cbbd9e74f82b09a48526fbbee",
+          "bytes": 1461522,
+          "pdf_pages": 7,
+          "source_url": null,
+          "role": "user-provided original"
+        },
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/DTEB.pdf",
+          "sha256": "850e3e9321e302666d5e30eea558327920fcc32cbbd9e74f82b09a48526fbbee",
+          "bytes": 1461522,
+          "pdf_pages": 7,
+          "source_url": "https://arxiv.org/pdf/2303.11279",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2303.11279",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/DTEB.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2303.11279",
+          "resolved_url": "https://arxiv.org/pdf/2303.11279",
+          "urls": [
+            "https://arxiv.org/pdf/2303.11279"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/01_existing_pdfs/04_Chung_2022_DTEB.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2303.11279",
+        "https://arxiv.org/pdf/2303.11279"
+      ]
+    },
+    {
+      "id": "R22",
+      "title": "Distributed MPC with social preferences",
+      "supplied_title": "IFAC — Distributed MPC for Safety-Critical Obstacle Avoidance with Social Preferences",
+      "record_url": "https://doi.org/10.1016/j.ifacol.2025.11.587",
+      "metadata_title": "Distributed Model Predictive Control for Safety-Critical Obstacle Avoidance in Multi-Robot Systems with Social Preferences",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.ifacol.2025.11.587",
+      "metadata_request_error": null,
+      "doi": "10.1016/j.ifacol.2025.11.587",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ifacol.2025.11.587"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1016/j.ifacol.2025.11.587"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R22",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ifacol.2025.11.587",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://doi.org/10.1016/j.ifacol.2025.11.587",
+          "any_repository_has_fulltext": false
+        },
+        "locations": [
+          {
+            "pdf_url": null,
+            "landing_page_url": "https://doi.org/10.1016/j.ifacol.2025.11.587",
+            "is_oa": true,
+            "version": "publishedVersion",
+            "license": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "R23",
+      "title": "Muhammed et al., 2026: cooperative object transport",
+      "supplied_title": "Muhammed et al. — Real-time Decentralized MPC for Cooperative Multi-Robot Object Transport",
+      "record_url": "https://doi.org/10.1038/s41598-026-41881-w",
+      "metadata_title": "Real-time decentralized model predictive control for cooperative multi-robot object transport: experimental validation",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1038%2Fs41598-026-41881-w",
+      "metadata_request_error": null,
+      "doi": "10.1038/s41598-026-41881-w",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              22
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              22
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R23.pdf",
+          "sha256": "49fc2c9d7c65bf50389e9fb31335dea0f9fb6e56ce9af3fc47511e7b1d335723",
+          "bytes": 4212703,
+          "pdf_pages": 15,
+          "source_url": "https://www.nature.com/articles/s41598-026-41881-w.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://www.nature.com/articles/s41598-026-41881-w.pdf",
+          "resolved_url": "https://www.nature.com/articles/s41598-026-41881-w.pdf",
+          "urls": [
+            "https://www.nature.com/articles/s41598-026-41881-w.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R23.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1038/s41598-026-41881-w",
+        "https://www.nature.com/articles/s41598-026-41881-w.pdf"
+      ]
+    },
+    {
+      "id": "R24",
+      "title": "Phillips and Likhachev, 2011: SIPP",
+      "supplied_title": "Phillips and Likhachev — SIPP: Safe Interval Path Planning for Dynamic Environments",
+      "record_url": "https://www.cs.cmu.edu/~maxim/files/sipp_icra11.pdf",
+      "metadata_title": null,
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://www.cs.cmu.edu/~maxim/files/sipp_icra11.pdf",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/SIPP.pdf",
+          "sha256": "75d1427dd908d33b4f56a24133c3242f36a1523825fa132668dad0a9daaf39c7",
+          "bytes": 549392,
+          "pdf_pages": 8,
+          "source_url": "https://www.cs.cmu.edu/~maxim/files/sipp_icra11.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://www.cs.cmu.edu/~maxim/files/sipp_icra11.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/SIPP.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://www.cs.cmu.edu/~maxim/files/sipp_icra11.pdf"
+      ]
+    },
+    {
+      "id": "R25",
+      "title": "SIPP-IP: kinodynamic constraints",
+      "supplied_title": "Ali and Yakovlev — Safe Interval Path Planning with Kinodynamic Constraints (SIPP-IP)",
+      "record_url": "https://doi.org/10.1609/aaai.v37i10.26453",
+      "metadata_title": "Safe Interval Path Planning with Kinodynamic Constraints",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v37i10.26453",
+      "metadata_request_error": null,
+      "doi": "10.1609/aaai.v37i10.26453",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              26
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              26
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R25.pdf",
+          "sha256": "8cf562e88feab9506cf086694330769dd96b071b51fc0ec031e432c8862ddc14",
+          "bytes": 462709,
+          "pdf_pages": 10,
+          "source_url": "https://arxiv.org/pdf/2302.00776",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "urls": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/26453/26225"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26453/26225",
+              "error": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2302.00776",
+          "urls": [
+            "https://arxiv.org/pdf/2302.00776"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R25.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/aaai.v37i10.26453",
+        "https://arxiv.org/pdf/2302.00776"
+      ]
+    },
+    {
+      "id": "R26",
+      "title": "Kasaura et al., 2022: PSIPP/CTC",
+      "supplied_title": "Kasaura et al. — Prioritized SIPP with Continuous Time on 2D Roadmaps (PSIPP/CTC)",
+      "record_url": "https://doi.org/10.1109/LRA.2022.3187265",
+      "metadata_title": "Prioritized Safe Interval Path Planning for Multi-Agent Pathfinding With Continuous Time on 2D Roadmaps",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FLRA.2022.3187265",
+      "metadata_request_error": null,
+      "doi": "10.1109/lra.2022.3187265",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              10
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R26.pdf",
+          "sha256": "a1e98c5ade2974d0f420a93594b2a461884782b48a5315311444f9d752c7f435",
+          "bytes": 1062427,
+          "pdf_pages": 8,
+          "source_url": "https://ieeexplore.ieee.org/ielx7/7083369/9831196/09811344.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://ieeexplore.ieee.org/ielx7/7083369/9831196/09811344.pdf",
+          "resolved_url": "https://ieeexplore.ieee.org/ielx7/7083369/9831196/09811344.pdf",
+          "urls": [
+            "https://ieeexplore.ieee.org/ielx7/7083369/9831196/09811344.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R26.pdf"
+        },
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1109/lra.2022.3187265"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/LRA.2022.3187265",
+        "https://ieeexplore.ieee.org/ielx7/7083369/9831196/09811344.pdf"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R26",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1109/lra.2022.3187265",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://ieeexplore.ieee.org/ielx7/7083369/9831196/09811344.pdf",
+          "any_repository_has_fulltext": false
+        },
+        "locations": [
+          {
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/7083369/9831196/09811344.pdf",
+            "landing_page_url": "https://doi.org/10.1109/lra.2022.3187265",
+            "is_oa": true,
+            "version": "publishedVersion",
+            "license": "cc-by"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R27",
+      "title": "Andreychuk et al., 2019: continuous-time CBS",
+      "supplied_title": "Andreychuk et al. — Multi-Agent Pathfinding with Continuous Time (CCBS)",
+      "record_url": "https://ijcai.org/proceedings/2019/6",
+      "metadata_title": "Multi-Agent Pathfinding with Continuous Time | IJCAI",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://ijcai.org/proceedings/2019/6",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/CCBS.pdf",
+          "sha256": "3d3897303877298d3f87c1a8fe0ee56704a9f3ddfbe8ffd0509b4d6a34841835",
+          "bytes": 365973,
+          "pdf_pages": 7,
+          "source_url": "https://ijcai.org/proceedings/2019/0006.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://ijcai.org/proceedings/2019/0006.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/CCBS.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://ijcai.org/proceedings/2019/0006.pdf",
+          "resolved_url": "https://ijcai.org/proceedings/2019/0006.pdf",
+          "urls": [
+            "https://ijcai.org/proceedings/2019/0006.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/CCBS.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://ijcai.org/proceedings/2019/6",
+        "https://ijcai.org/proceedings/2019/0006.pdf"
+      ]
+    },
+    {
+      "id": "R28",
+      "title": "Tan et al., 2024: robust continuous-time MAPF",
+      "supplied_title": "Tan et al. — Robust Multi-Agent Pathfinding with Continuous Time",
+      "record_url": "https://doi.org/10.1609/icaps.v34i1.31519",
+      "metadata_title": "Robust Multi-Agent Pathfinding with Continuous Time",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Ficaps.v34i1.31519",
+      "metadata_request_error": null,
+      "doi": "10.1609/icaps.v34i1.31519",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              30
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              30
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "resolved_url": "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679",
+          "urls": [
+            "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679",
+              "error": "Not a PDF"
+            }
+          ]
+        },
+        {
+          "status": "failed",
+          "resolved_url": "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679/35576",
+          "urls": [
+            "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679/35576"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679/35576",
+              "error": "Not a PDF"
+            }
+          ]
+        },
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1609/icaps.v34i1.31519"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/icaps.v34i1.31519"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R28",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1609/icaps.v34i1.31519",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679",
+          "any_repository_has_fulltext": false
+        },
+        "locations": [
+          {
+            "pdf_url": "https://ojs.aaai.org/index.php/ICAPS/article/download/31519/33679",
+            "landing_page_url": "https://doi.org/10.1609/icaps.v34i1.31519",
+            "is_oa": true,
+            "version": "publishedVersion",
+            "license": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "R29",
+      "title": "Okumura et al., 2019: PIBT",
+      "supplied_title": "Okumura et al. — Priority Inheritance with Backtracking (PIBT)",
+      "record_url": "https://www.ijcai.org/Proceedings/2019/0076.pdf",
+      "metadata_title": null,
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://ijcai.org/Proceedings/2019/0076.pdf",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/PIBT.pdf",
+          "sha256": "69812483cc4fe9c03c80a58c3a467836a9f0de598549885a1bcb3cd1e2be280e",
+          "bytes": 191592,
+          "pdf_pages": 8,
+          "source_url": "https://www.ijcai.org/Proceedings/2019/0076.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://www.ijcai.org/Proceedings/2019/0076.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/PIBT.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://www.ijcai.org/Proceedings/2019/0076.pdf"
+      ]
+    },
+    {
+      "id": "R30",
+      "title": "Li et al., 2021: rolling-horizon collision resolution",
+      "supplied_title": "Li et al. — Lifelong MAPF in Large-Scale Warehouses (RHCR)",
+      "record_url": "https://doi.org/10.1609/aaai.v35i13.17344",
+      "metadata_title": "Lifelong Multi-Agent Path Finding in Large-Scale Warehouses",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v35i13.17344",
+      "metadata_request_error": null,
+      "doi": "10.1609/aaai.v35i13.17344",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              18
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              18
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R30.pdf",
+          "sha256": "ecd92f2725a9f7fcaa341f5b46fbbfea8eaa8ff16d235e334a09aa329ff10527",
+          "bytes": 2781043,
+          "pdf_pages": 10,
+          "source_url": "https://jiaoyangli.me/files/2021-AAAI-2.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "urls": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/17344/17151"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/AAAI/article/download/17344/17151",
+              "error": "The read operation timed out"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://jiaoyangli.me/files/2021-AAAI-2.pdf",
+          "urls": [
+            "https://jiaoyangli.me/files/2021-AAAI-2.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R30.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/aaai.v35i13.17344",
+        "https://jiaoyangli.me/files/2021-AAAI-2.pdf"
+      ]
+    },
+    {
+      "id": "R31",
+      "title": "Li et al., 2022: MAPF-LNS2",
+      "supplied_title": "Li et al. — MAPF-LNS2: Fast Repairing via Large Neighborhood Search",
+      "record_url": "https://doi.org/10.1609/aaai.v36i9.21266",
+      "metadata_title": "MAPF-LNS2: Fast Repairing for Multi-Agent Path Finding via Large Neighborhood Search",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v36i9.21266",
+      "metadata_request_error": null,
+      "doi": "10.1609/aaai.v36i9.21266",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              28
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              28
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R31.pdf",
+          "sha256": "2e3a300a76c41756421c66ba1ecd3a6b63117e2be1d1cba667c32c888592295d",
+          "bytes": 3377714,
+          "pdf_pages": 10,
+          "source_url": "https://idm-lab.org/bib/abstracts/papers/aaai22a.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "resolved_url": "https://ojs.aaai.org/index.php/AAAI/article/download/21266/21015",
+          "urls": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/21266/21015"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/AAAI/article/download/21266/21015",
+              "error": "Not a PDF"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://idm-lab.org/bib/abstracts/papers/aaai22a.pdf",
+          "urls": [
+            "https://idm-lab.org/bib/abstracts/papers/aaai22a.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R31.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/aaai.v36i9.21266",
+        "https://idm-lab.org/bib/abstracts/papers/aaai22a.pdf"
+      ]
+    },
+    {
+      "id": "R32",
+      "title": "Huang et al., 2022: ML-guided LNS",
+      "supplied_title": "Huang et al. — Anytime MAPF via ML-Guided Large Neighborhood Search",
+      "record_url": "https://doi.org/10.1609/aaai.v36i9.21168",
+      "metadata_title": "Anytime Multi-Agent Path Finding via Machine Learning-Guided Large Neighborhood Search",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v36i9.21168",
+      "metadata_request_error": null,
+      "doi": "10.1609/aaai.v36i9.21168",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              28
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              28
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R32.pdf",
+          "sha256": "08208e2ce5b7b68a995e3c33b7b67ce2e039b061cfbd85c65c110b297233728d",
+          "bytes": 6360485,
+          "pdf_pages": 9,
+          "source_url": "https://idm-lab.org/bib/abstracts/papers/aaai22d.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "resolved_url": "https://ojs.aaai.org/index.php/AAAI/article/download/21168/20917",
+          "urls": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/21168/20917"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/AAAI/article/download/21168/20917",
+              "error": "Not a PDF"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://idm-lab.org/bib/abstracts/papers/aaai22d.pdf",
+          "urls": [
+            "https://idm-lab.org/bib/abstracts/papers/aaai22d.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R32.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/aaai.v36i9.21168",
+        "https://idm-lab.org/bib/abstracts/papers/aaai22d.pdf"
+      ]
+    },
+    {
+      "id": "R33",
+      "title": "Okumura, 2023: LaCAM",
+      "supplied_title": "Okumura — LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+      "record_url": "https://doi.org/10.1609/aaai.v37i10.26377",
+      "metadata_title": "LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v37i10.26377",
+      "metadata_request_error": null,
+      "doi": "10.1609/aaai.v37i10.26377",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              26
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              26
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R33.pdf",
+          "sha256": "0088eb0fedd0b2b5e37de4be31a95f7b7d0199c4147d53480df01ecf3b862a36",
+          "bytes": 16965870,
+          "pdf_pages": 8,
+          "source_url": "https://arxiv.org/pdf/2211.13432",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "resolved_url": "https://ojs.aaai.org/index.php/AAAI/article/download/26377/26149",
+          "urls": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/26377/26149"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26377/26149",
+              "error": "Not a PDF"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2211.13432",
+          "urls": [
+            "https://arxiv.org/pdf/2211.13432"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R33.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/aaai.v37i10.26377",
+        "https://arxiv.org/pdf/2211.13432"
+      ]
+    },
+    {
+      "id": "R34",
+      "title": "LaCAM*: eventually optimal search",
+      "supplied_title": "Okumura — Improving LaCAM for Scalable Eventually Optimal MAPF",
+      "record_url": "https://ijcai.org/proceedings/2023/28",
+      "metadata_title": "Improving LaCAM for Scalable Eventually Optimal Multi-Agent Pathfinding | IJCAI",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://ijcai.org/proceedings/2023/28",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R34.pdf",
+          "sha256": "64a880f0a512943bfb6a49ad6c351f6bfca244b0bcf18555fbce6f696d670742",
+          "bytes": 948054,
+          "pdf_pages": 9,
+          "source_url": "https://ijcai.org/proceedings/2023/0028.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://ijcai.org/proceedings/2023/0028.pdf",
+          "resolved_url": "https://ijcai.org/proceedings/2023/0028.pdf",
+          "urls": [
+            "https://ijcai.org/proceedings/2023/0028.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R34.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://ijcai.org/proceedings/2023/28",
+        "https://ijcai.org/proceedings/2023/0028.pdf"
+      ]
+    },
+    {
+      "id": "R35",
+      "title": "Kato et al., 2025: congestion mitigation path planning",
+      "supplied_title": "Kato et al. — Congestion Mitigation Path Planning for Large-Scale Multi-Agent Navigation",
+      "record_url": "https://arxiv.org/abs/2508.05253",
+      "metadata_title": "[2508.05253] Congestion Mitigation Path Planning for Large-Scale Multi-Agent Navigation in Dense Environments",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2508.05253",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/Congestion.pdf",
+          "sha256": "ba0fa75a17655c68ed3b77425b9ba3c941f81b120bf81c3cb74488f8e268b177",
+          "bytes": 2973277,
+          "pdf_pages": 9,
+          "source_url": "https://arxiv.org/pdf/2508.05253",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2508.05253",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Congestion.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2508.05253",
+          "resolved_url": "https://arxiv.org/pdf/2508.05253",
+          "urls": [
+            "https://arxiv.org/pdf/2508.05253"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Congestion.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2508.05253",
+        "https://arxiv.org/pdf/2508.05253"
+      ]
+    },
+    {
+      "id": "R36",
+      "title": "Amir et al., 2025: ReCoDe",
+      "supplied_title": "Amir et al. — ReCoDe: RL-Based Dynamic Constraint Design for Multi-Agent Coordination",
+      "record_url": "https://proceedings.mlr.press/v305/amir25a.html",
+      "metadata_title": "ReCoDe: Reinforcement Learning-based Dynamic Constraint Design for Multi-Agent Coordination",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://proceedings.mlr.press/v305/amir25a.html",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R36.pdf",
+          "sha256": "4985fe9ee3b319900687087a125b3a5e2394e17a30c0bef209dc89a51ba5aee0",
+          "bytes": 6938650,
+          "pdf_pages": 17,
+          "source_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/amir25a/amir25a.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/amir25a/amir25a.pdf",
+          "resolved_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/amir25a/amir25a.pdf",
+          "urls": [
+            "https://raw.githubusercontent.com/mlresearch/v305/main/assets/amir25a/amir25a.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R36.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://proceedings.mlr.press/v305/amir25a.html",
+        "https://raw.githubusercontent.com/mlresearch/v305/main/assets/amir25a/amir25a.pdf"
+      ]
+    },
+    {
+      "id": "R37",
+      "title": "Concrete multi-agent path planning, 2026",
+      "supplied_title": "Okumura et al. — Concrete Multi-Agent Path Planning Enabling Kinodynamically Aggressive Maneuvers",
+      "record_url": "https://www.nature.com/articles/s44182-026-00083-2",
+      "metadata_title": "Concrete multi-agent path planning enabling kinodynamically aggressive maneuvers | npj Robotics",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": "Main paper reviewed also through publisher HTML; supplementary PDF separately examined.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://www.nature.com/articles/s44182-026-00083-2?error=cookies_not_supported&code=8d644a86-4eb3-4f77-b436-7266d941f3a9",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R37-supplement.pdf",
+          "sha256": "2811bab131067748630fea3e11b91dc62d22f02b547349efd248fdf2e36767bc",
+          "bytes": 3308977,
+          "pdf_pages": 31,
+          "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs44182-026-00083-2/MediaObjects/44182_2026_83_MOESM1_ESM.pdf",
+          "role": "supplement"
+        },
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R37.pdf",
+          "sha256": "0af4a32fa86be6f2be5612773086829055824ed694a1c1aa642073279740c6ee",
+          "bytes": 4704831,
+          "pdf_pages": 15,
+          "source_url": "https://www.nature.com/articles/s44182-026-00083-2.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs44182-026-00083-2/MediaObjects/44182_2026_83_MOESM1_ESM.pdf",
+          "urls": [
+            "https://static-content.springer.com/esm/art%3A10.1038%2Fs44182-026-00083-2/MediaObjects/44182_2026_83_MOESM1_ESM.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R37-supplement.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://www.nature.com/articles/s44182-026-00083-2.pdf",
+          "resolved_url": "https://www.nature.com/articles/s44182-026-00083-2.pdf",
+          "urls": [
+            "https://www.nature.com/articles/s44182-026-00083-2.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R37.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://www.nature.com/articles/s44182-026-00083-2",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs44182-026-00083-2/MediaObjects/44182_2026_83_MOESM1_ESM.pdf",
+        "https://www.nature.com/articles/s44182-026-00083-2.pdf"
+      ],
+      "retrieved_page_hashes": [
+        {
+          "format": "html",
+          "sha256": "61c1ba0f3e1a0947e8a1efec42c3314fc88baaba86e8b45d212386a733a3d9e4",
+          "local_snapshot_retained": false
+        }
+      ]
+    },
+    {
+      "id": "R38",
+      "title": "Kim et al., 2026: asynchronous lifelong MAPF",
+      "supplied_title": "Kim et al. — A Scalable Framework for Lifelong MAPF with Asynchronous Actions",
+      "record_url": "https://doi.org/10.1109/TII.2026.3681327",
+      "metadata_title": "A Scalable Framework for Lifelong Multiagent Path Finding With Asynchronous Actions",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FTII.2026.3681327",
+      "metadata_request_error": null,
+      "doi": "10.1109/tii.2026.3681327",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              8
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1109/tii.2026.3681327"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/TII.2026.3681327"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R38",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1109/tii.2026.3681327",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null,
+          "any_repository_has_fulltext": false
+        },
+        "locations": []
+      }
+    },
+    {
+      "id": "R39",
+      "title": "Zheng et al.: learning-guided lifelong prioritized planning",
+      "supplied_title": "Zheng et al. — Learning-guided Prioritized Planning for Lifelong MAPF in Warehouse Automation",
+      "record_url": "https://doi.org/10.1613/jair.1.20611",
+      "metadata_title": "Learning-guided Prioritized Planning for Lifelong Multi-Agent Path Finding in Warehouse Automation",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1613%2Fjair.1.20611",
+      "metadata_request_error": null,
+      "doi": "10.1613/jair.1.20611",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              24
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              24
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R39.pdf",
+          "sha256": "895a47965ab331f9f55501b4f2312d5a14b5a1404cff20a9093339cedf8e6a5a",
+          "bytes": 2148073,
+          "pdf_pages": 44,
+          "source_url": "https://www.jair.org/index.php/jair/article/download/20611/27283",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://www.jair.org/index.php/jair/article/download/20611/27283",
+          "resolved_url": "https://www.jair.org/index.php/jair/article/download/20611/27283",
+          "urls": [
+            "https://www.jair.org/index.php/jair/article/download/20611/27283"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R39.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1613/jair.1.20611",
+        "https://www.jair.org/index.php/jair/article/download/20611/27283"
+      ]
+    },
+    {
+      "id": "R40",
+      "title": "Klančar et al.: elevating priorities on roadmaps",
+      "supplied_title": "Klančar et al. — Elevating Priorities for Efficient Lifelong Multi-AGV Pathfinding on Roadmaps",
+      "record_url": "https://doi.org/10.1016/j.robot.2025.105295",
+      "metadata_title": "Elevating priorities for an efficient and complete lifelong multi-AGV pathfinding on roadmaps",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.robot.2025.105295",
+      "metadata_request_error": null,
+      "doi": "10.1016/j.robot.2025.105295",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              3
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.robot.2025.105295"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1016/j.robot.2025.105295"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R40",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.robot.2025.105295",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null,
+          "any_repository_has_fulltext": false
+        },
+        "locations": []
+      }
+    },
+    {
+      "id": "R41",
+      "title": "Tang et al., 2026: greedy PIBT",
+      "supplied_title": "Tang et al. — Greedy Priority Inheritance with Backtracking",
+      "record_url": "https://doi.org/10.1109/TASE.2026.3703194",
+      "metadata_title": "Greedy Priority Inheritance With Backtracking for Multi-Agent Pathfinding Problem",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FTASE.2026.3703194",
+      "metadata_request_error": null,
+      "doi": "10.1109/tase.2026.3703194",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1109/tase.2026.3703194"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/TASE.2026.3703194"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R41",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1109/tase.2026.3703194",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null,
+          "any_repository_has_fulltext": false
+        },
+        "locations": []
+      }
+    },
+    {
+      "id": "R42",
+      "title": "Local guidance for configuration-based MAPF",
+      "supplied_title": "Arita and Okumura — Local Guidance for Configuration-Based Multi-Agent Pathfinding",
+      "record_url": "https://doi.org/10.1609/aaai.v40i35.40169",
+      "metadata_title": "Local Guidance for Configuration-Based Multi-Agent Pathfinding",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v40i35.40169",
+      "metadata_request_error": null,
+      "doi": "10.1609/aaai.v40i35.40169",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              14
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              14
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R42.pdf",
+          "sha256": "f2a462205018903ffd97168ee5a630776478879420a2be42fc104dd4f649b66d",
+          "bytes": 2204508,
+          "pdf_pages": 10,
+          "source_url": "https://arxiv.org/pdf/2510.19072",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "urls": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/40169/44130"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40169/44130",
+              "error": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2510.19072",
+          "urls": [
+            "https://arxiv.org/pdf/2510.19072"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R42.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/aaai.v40i35.40169",
+        "https://arxiv.org/pdf/2510.19072"
+      ]
+    },
+    {
+      "id": "R43",
+      "title": "LaGAT: graph attention-guided search",
+      "supplied_title": "Jain et al. — Graph Attention-Guided Search for Dense Multi-Agent Pathfinding (LaGAT)",
+      "record_url": "https://doi.org/10.1609/aaai.v40i35.40192",
+      "metadata_title": "Graph Attention-Guided Search for Dense Multi-Agent Pathfinding",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Faaai.v40i35.40192",
+      "metadata_request_error": null,
+      "doi": "10.1609/aaai.v40i35.40192",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              14
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              14
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R43.pdf",
+          "sha256": "143c656c44a4a60edd0db3004d1368ddf8ecebaa4d4d15ce4b8a09aff535a346",
+          "bytes": 1745366,
+          "pdf_pages": 12,
+          "source_url": "https://arxiv.org/pdf/2510.17382",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "resolved_url": "https://ojs.aaai.org/index.php/AAAI/article/download/40192/44153",
+          "urls": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/40192/44153"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40192/44153",
+              "error": "Not a PDF"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2510.17382",
+          "urls": [
+            "https://arxiv.org/pdf/2510.17382"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R43.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/aaai.v40i35.40192",
+        "https://arxiv.org/pdf/2510.17382"
+      ]
+    },
+    {
+      "id": "R44",
+      "title": "Lifelong LaCAM with local guidance",
+      "supplied_title": "Arita and Okumura — Lifelong LaCAM with Local Guidance",
+      "record_url": "https://doi.org/10.1609/socs.v19i1.43067",
+      "metadata_title": "Lifelong LaCAM with Local Guidance for Lifelong MAPF",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": "Public arXiv preprint located after initial proceedings access failure; selected full-text review completed.",
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1609%2Fsocs.v19i1.43067",
+      "metadata_request_error": null,
+      "doi": "10.1609/socs.v19i1.43067",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              14
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              14
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R44.pdf",
+          "sha256": "eb54d7ce9e966980353b3594c3eed7c6abd5daaf4e7a66fcd416f1a1c41f0624",
+          "bytes": 1468281,
+          "pdf_pages": 10,
+          "source_url": "https://arxiv.org/pdf/2605.16855",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "resolved_url": "https://ojs.aaai.org/index.php/SOCS/article/download/43067/50627",
+          "urls": [
+            "https://ojs.aaai.org/index.php/SOCS/article/download/43067/50627"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ojs.aaai.org/index.php/SOCS/article/download/43067/50627",
+              "error": "Not a PDF"
+            }
+          ]
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2605.16855",
+          "urls": [
+            "https://arxiv.org/pdf/2605.16855"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R44.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1609/socs.v19i1.43067",
+        "https://arxiv.org/pdf/2605.16855"
+      ]
+    },
+    {
+      "id": "R45",
+      "title": "Kumar et al., 2026: SIPP and learning-guided repair",
+      "supplied_title": "Kumar et al. — Real-Time Multi-Robot Motion Planning with Safe-Interval Search and Learning-Guided Repair",
+      "record_url": "https://ijcai.org/proceedings/2026/842",
+      "metadata_title": "Real-Time Multi-Robot Motion Planning with Safe-Interval Search and Learning-Guided Repair | IJCAI",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://ijcai.org/proceedings/2026/842",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/SIPP-Repair.pdf",
+          "sha256": "e31b93b7a75251cf33af97390d46f7b76359fbe21f56988be474fce3638ea6bc",
+          "bytes": 206343,
+          "pdf_pages": 8,
+          "source_url": "https://ijcai.org/proceedings/2026/0842.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://ijcai.org/proceedings/2026/0842.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/SIPP-Repair.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://ijcai.org/proceedings/2026/0842.pdf",
+          "resolved_url": "https://ijcai.org/proceedings/2026/0842.pdf",
+          "urls": [
+            "https://ijcai.org/proceedings/2026/0842.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/SIPP-Repair.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://ijcai.org/proceedings/2026/842",
+        "https://ijcai.org/proceedings/2026/0842.pdf"
+      ]
+    },
+    {
+      "id": "R46",
+      "title": "Huang et al., 2026: SMART",
+      "supplied_title": "Huang et al. — SMART: Scalable Multi-Agent Reasoning and Trajectory Planning in Dense Environments",
+      "record_url": "https://doi.org/10.1016/j.trc.2026.105793",
+      "metadata_title": "SMART: Scalable multi-agent reasoning and trajectory planning in dense environments",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": "Public arXiv v1 September 2025 reviewed; journal publication/version and author list differ.",
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.trc.2026.105793",
+      "metadata_request_error": null,
+      "doi": "10.1016/j.trc.2026.105793",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R46.pdf",
+          "sha256": "3b3906ff169ab68bdde47ae9ef64e51db341343dae307c07df6c538c17bf33f3",
+          "bytes": 2900949,
+          "pdf_pages": 21,
+          "source_url": "https://arxiv.org/pdf/2509.15737",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2509.15737",
+          "resolved_url": "https://arxiv.org/pdf/2509.15737",
+          "urls": [
+            "https://arxiv.org/pdf/2509.15737"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R46.pdf"
+        },
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.trc.2026.105793"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1016/j.trc.2026.105793",
+        "https://arxiv.org/pdf/2509.15737"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R46",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.trc.2026.105793",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://arxiv.org/pdf/2509.15737",
+          "any_repository_has_fulltext": true
+        },
+        "locations": [
+          {
+            "pdf_url": "https://arxiv.org/pdf/2509.15737",
+            "landing_page_url": "http://arxiv.org/abs/2509.15737",
+            "is_oa": true,
+            "version": "submittedVersion",
+            "license": null
+          },
+          {
+            "pdf_url": null,
+            "landing_page_url": "https://doi.org/10.48550/arxiv.2509.15737",
+            "is_oa": true,
+            "version": null,
+            "license": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "R47",
+      "title": "Guo et al., 2026: risk index and dynamic priorities",
+      "supplied_title": "Guo et al. — Collision Risk Index and Dynamic Priority in Multi-Robot Cooperative Planning",
+      "record_url": "https://doi.org/10.1016/j.robot.2026.105592",
+      "metadata_title": "Integration of the collision risk index and dynamic priority in multi-robot cooperative path planning",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1016%2Fj.robot.2026.105592",
+      "metadata_request_error": null,
+      "doi": "10.1016/j.robot.2026.105592",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.robot.2026.105592"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1016/j.robot.2026.105592"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R47",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.robot.2026.105592",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": false,
+          "oa_status": "closed",
+          "oa_url": null,
+          "any_repository_has_fulltext": false
+        },
+        "locations": []
+      }
+    },
+    {
+      "id": "R48",
+      "title": "Salzmann et al., 2020: Trajectron++",
+      "supplied_title": "Salzmann et al. — Trajectron++: Dynamically-Feasible Trajectory Forecasting with Heterogeneous Data",
+      "record_url": "https://arxiv.org/abs/2001.03093",
+      "metadata_title": "[2001.03093] Trajectron++: Dynamically-Feasible Trajectory Forecasting With Heterogeneous Data",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2001.03093",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/Trajectronplusplus.pdf",
+          "sha256": "fe972cbd24b236ad01ca5fac6a5f412e56c5f44431667617a6077e3d47de09cd",
+          "bytes": 10153697,
+          "pdf_pages": 23,
+          "source_url": "https://arxiv.org/pdf/2001.03093",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2001.03093",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Trajectronplusplus.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2001.03093",
+          "resolved_url": "https://arxiv.org/pdf/2001.03093",
+          "urls": [
+            "https://arxiv.org/pdf/2001.03093"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Trajectronplusplus.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2001.03093",
+        "https://arxiv.org/pdf/2001.03093"
+      ]
+    },
+    {
+      "id": "R49",
+      "title": "Sun et al., 2022: M2I",
+      "supplied_title": "Sun et al. — M2I: From Factored Marginal to Interactive Trajectory Prediction",
+      "record_url": "https://openaccess.thecvf.com/content/CVPR2022/html/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.html",
+      "metadata_title": "CVPR 2022 Open Access Repository",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://openaccess.thecvf.com/content/CVPR2022/html/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.html",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R49.pdf",
+          "sha256": "9344a1364a225d8befcc46d6e6e0f0eda1d9d9c16ad60a42e09437f846f87718",
+          "bytes": 1848721,
+          "pdf_pages": 10,
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.pdf",
+          "resolved_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.pdf",
+          "urls": [
+            "https://openaccess.thecvf.com/content/CVPR2022/papers/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R49.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content/CVPR2022/html/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.html",
+        "https://openaccess.thecvf.com/content/CVPR2022/papers/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.pdf"
+      ]
+    },
+    {
+      "id": "R50",
+      "title": "Alahi et al., 2016: Social LSTM",
+      "supplied_title": "Alahi et al. — Social LSTM: Human Trajectory Prediction in Crowded Spaces",
+      "record_url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alahi_Social_LSTM_Human_CVPR_2016_paper.pdf",
+      "metadata_title": null,
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alahi_Social_LSTM_Human_CVPR_2016_paper.pdf",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/Social-LSTM.pdf",
+          "sha256": "d4825dd25b86a09e7349ec2a5d69902deb69215a5b0bec6abf652ce49b1c9ed4",
+          "bytes": 1058799,
+          "pdf_pages": 11,
+          "source_url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alahi_Social_LSTM_Human_CVPR_2016_paper.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alahi_Social_LSTM_Human_CVPR_2016_paper.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Social-LSTM.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alahi_Social_LSTM_Human_CVPR_2016_paper.pdf"
+      ]
+    },
+    {
+      "id": "R51",
+      "title": "Gupta et al., 2018: Social GAN",
+      "supplied_title": "Gupta et al. — Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks",
+      "record_url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf",
+      "metadata_title": null,
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R51.pdf",
+          "sha256": "10690612a9ab2c6f18c4cb5837799bb220da9645d5359fa6d615a8e113126980",
+          "bytes": 974504,
+          "pdf_pages": 10,
+          "source_url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf",
+          "resolved_url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf",
+          "urls": [
+            "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R51.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf"
+      ]
+    },
+    {
+      "id": "R52",
+      "title": "Yang et al., 2024: IA-LSTM",
+      "supplied_title": "Yang et al. — IA-LSTM: Interaction-Aware LSTM for Pedestrian Trajectory Prediction",
+      "record_url": "https://doi.org/10.1109/TCYB.2024.3359237",
+      "metadata_title": "IA-LSTM: Interaction-Aware LSTM for Pedestrian Trajectory Prediction",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FTCYB.2024.3359237",
+      "metadata_request_error": null,
+      "doi": "10.1109/tcyb.2024.3359237",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              7
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R52.pdf",
+          "sha256": "ed1c4c44767ccbbba2701c2181be60cf653e67cf1be1efce4b5b5b30f5d151f8",
+          "bytes": 1508284,
+          "pdf_pages": 14,
+          "source_url": "https://arxiv.org/pdf/2311.15193",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2311.15193",
+          "urls": [
+            "https://arxiv.org/pdf/2311.15193"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R52.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/TCYB.2024.3359237",
+        "https://arxiv.org/pdf/2311.15193"
+      ]
+    },
+    {
+      "id": "R53",
+      "title": "Samavi et al.: SICNav",
+      "supplied_title": "Samavi et al. — SICNav: Interactive Crowd Navigation with Bilevel Optimization",
+      "record_url": "https://arxiv.org/abs/2310.10982",
+      "metadata_title": "[2310.10982] SICNav: Safe and Interactive Crowd Navigation using Model Predictive Control and Bilevel Optimization",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "Downloaded arXiv v3 (March 2025); distinguish online journal date and issue date.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2310.10982",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/SICNav.pdf",
+          "sha256": "fec63c211fbd32618ad7d755143322dbedb56fe397412fb6d4f69defa659b141",
+          "bytes": 5118464,
+          "pdf_pages": 18,
+          "source_url": "https://arxiv.org/pdf/2310.10982",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2310.10982",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/SICNav.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2310.10982",
+          "resolved_url": "https://arxiv.org/pdf/2310.10982",
+          "urls": [
+            "https://arxiv.org/pdf/2310.10982"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/SICNav.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2310.10982",
+        "https://arxiv.org/pdf/2310.10982"
+      ]
+    },
+    {
+      "id": "R54",
+      "title": "Autoware map-based prediction documentation",
+      "supplied_title": "Autoware — Map-Based Prediction Implementation (versioned documentation)",
+      "record_url": "https://autowarefoundation.github.io/autoware_universe/refs-tags-v1.0/perception/map_based_prediction/",
+      "metadata_title": "map_based_prediction - Autoware Universe Documentation",
+      "evidence_level": "D",
+      "review_scope": "Versioned implementation documentation; not a research paper.",
+      "full_text_review": false,
+      "version_notes": "Versioned Autoware refs-tags-v1.0 documentation; not latest-version assertion.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://autowarefoundation.github.io/autoware_universe/refs-tags-v1.0/perception/map_based_prediction/",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [],
+      "retrieval_attempts": [],
+      "primary_urls": [
+        "https://autowarefoundation.github.io/autoware_universe/refs-tags-v1.0/perception/map_based_prediction/"
+      ],
+      "retrieved_page_hashes": [
+        {
+          "format": "html",
+          "sha256": "e34ff2b21b179c23cada83ce3728647184a60eb9ad10323df1c42cd3d267bc3b",
+          "local_snapshot_retained": false
+        }
+      ]
+    },
+    {
+      "id": "R55",
+      "title": "Intent-aware spatiotemporal risk fields, 2026",
+      "supplied_title": "Qiu and Liu — Intent-Aware Spatiotemporal Risk Field for Multi-AGV Planning",
+      "record_url": "https://doi.org/10.1007/s44443-026-00997-9",
+      "metadata_title": "Intent-aware spatiotemporal risk field for multi-AGV path planning with heterogeneous dynamic obstacles",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1007%2Fs44443-026-00997-9",
+      "metadata_request_error": null,
+      "doi": "10.1007/s44443-026-00997-9",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              2
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              2
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R55.pdf",
+          "sha256": "3d951e1958ee0e9efa656609f5991245658234b6a0fb03f6ce6968fa54135525",
+          "bytes": 2011415,
+          "pdf_pages": 20,
+          "source_url": "https://link.springer.com/content/pdf/10.1007/s44443-026-00997-9.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://link.springer.com/content/pdf/10.1007/s44443-026-00997-9.pdf",
+          "resolved_url": "https://link.springer.com/content/pdf/10.1007/s44443-026-00997-9.pdf",
+          "urls": [
+            "https://link.springer.com/content/pdf/10.1007/s44443-026-00997-9.pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R55.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1007/s44443-026-00997-9",
+        "https://link.springer.com/content/pdf/10.1007/s44443-026-00997-9.pdf"
+      ]
+    },
+    {
+      "id": "R56",
+      "title": "Meng et al., 2026: SceneAware-Att",
+      "supplied_title": "Meng et al. — Risk-Aware Multi-Modal Pedestrian Prediction with Scene-Attentive Social Attention",
+      "record_url": "https://doi.org/10.1049/itr2.70252",
+      "metadata_title": "Risk‐Aware Multi‐Modal Pedestrian Trajectory Prediction With Scene‐Attentive Social Attention",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1049%2Fitr2.70252",
+      "metadata_request_error": null,
+      "doi": "10.1049/itr2.70252",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              9
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "urls": [
+            "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/itr2.70252"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/itr2.70252",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ]
+        },
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1049/itr2.70252"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1049/itr2.70252"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R56",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1049/itr2.70252",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "gold",
+          "oa_url": "https://doi.org/10.1049/itr2.70252",
+          "any_repository_has_fulltext": false
+        },
+        "locations": [
+          {
+            "pdf_url": null,
+            "landing_page_url": "https://doi.org/10.1049/itr2.70252",
+            "is_oa": true,
+            "version": "publishedVersion",
+            "license": "cc-by-nc-nd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R57",
+      "title": "Pan et al.: mixed crowd navigation survey",
+      "supplied_title": "Pan et al. — Mixed Crowd Navigation: Perception, Interaction, Planning, and Control (survey)",
+      "record_url": "https://doi.org/10.1146/annurev-control-032024-023929",
+      "metadata_title": "Mixed Crowd Navigation: Perception, Interaction, Planning, and Control",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": "2025 advance review; 2026 volume publication; abstract-only review.",
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1146%2Fannurev-control-032024-023929",
+      "metadata_request_error": null,
+      "doi": "10.1146/annurev-control-032024-023929",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              5
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "requested_url": "https://www.annualreviews.org/deliver/fulltext/control/9/1/annurev-control-032024-023929.html?itemId=/content/journals/10.1146/annurev-control-032024-023929&mimeType=html&fmt=ahah",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "status": "failed",
+          "urls": [
+            "https://www.annualreviews.org/docserver/fulltext/control/9/1/annurev-control-032024-023929.pdf"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://www.annualreviews.org/docserver/fulltext/control/9/1/annurev-control-032024-023929.pdf",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ]
+        },
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1146/annurev-control-032024-023929"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1146/annurev-control-032024-023929",
+        "https://www.annualreviews.org/deliver/fulltext/control/9/1/annurev-control-032024-023929.html?itemId=/content/journals/10.1146/annurev-control-032024-023929&mimeType=html&fmt=ahah"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R57",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1146/annurev-control-032024-023929",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "oa_url": "https://doi.org/10.1146/annurev-control-032024-023929",
+          "any_repository_has_fulltext": false
+        },
+        "locations": [
+          {
+            "pdf_url": null,
+            "landing_page_url": "https://doi.org/10.1146/annurev-control-032024-023929",
+            "is_oa": true,
+            "version": "publishedVersion",
+            "license": "cc-by"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R58",
+      "title": "Firoozi et al.: OA-MPC",
+      "supplied_title": "Firoozi et al. — OA-MPC: Occlusion-Aware MPC for Guaranteed Safe Robot Navigation with Unseen Dynamic Obstacles",
+      "record_url": "https://arxiv.org/abs/2211.09156",
+      "metadata_title": "[2211.09156] OA-MPC: Occlusion-Aware MPC for Guaranteed Safe Robot Navigation with Unseen Dynamic Obstacles",
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "Retain older linked 8-page manuscript and later arXiv v2 13-page manuscript; safety correction uses latter.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2211.09156",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/OA-MPC.pdf",
+          "sha256": "2bc913853df13896c68b6ce4d604c7b84967ec6e3df44f606038ff01eb154464",
+          "bytes": 2782647,
+          "pdf_pages": 8,
+          "source_url": "https://msl.stanford.edu/papers/firoozi_occlusion-aware_2022.pdf",
+          "role": "paper"
+        },
+        {
+          "path": "docs/references/03_additional_verified_pdfs/OA-MPC-v2.pdf",
+          "sha256": "964e61b8b62aee8d5d786c258d35504fc15374f55f82be050fcfb12727408ee0",
+          "bytes": 5529363,
+          "pdf_pages": 13,
+          "source_url": "https://arxiv.org/pdf/2211.09156",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://msl.stanford.edu/papers/firoozi_occlusion-aware_2022.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/OA-MPC.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2211.09156",
+          "resolved_url": "https://arxiv.org/pdf/2211.09156",
+          "urls": [
+            "https://arxiv.org/pdf/2211.09156"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/OA-MPC-v2.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2211.09156",
+        "https://msl.stanford.edu/papers/firoozi_occlusion-aware_2022.pdf",
+        "https://arxiv.org/pdf/2211.09156"
+      ]
+    },
+    {
+      "id": "R59",
+      "title": "Haraldsen et al., 2024: VO theory for nonholonomic vehicles",
+      "supplied_title": "Haraldsen et al. — Theoretical Analysis of Velocity Obstacle Method for Nonholonomic Vehicles",
+      "record_url": "https://doi.org/10.1109/TCST.2024.3375023",
+      "metadata_title": "A Theoretical Analysis of the Velocity Obstacle Method for Nonholonomic Vehicles and Underactuated Surface Vessels",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FTCST.2024.3375023",
+      "metadata_request_error": null,
+      "doi": "10.1109/tcst.2024.3375023",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              9
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R59.pdf",
+          "sha256": "297585ec188defc67d64bebe2fe2136d25830c130a45a85f521872c1728afa5e",
+          "bytes": 9090447,
+          "pdf_pages": 16,
+          "source_url": "https://api.nva.unit.no/publication/file/01a19513bbba-14cf8795-c9bd-4551-bce7-7c7195c6a0e9",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://api.nva.unit.no/publication/file/01a19513bbba-14cf8795-c9bd-4551-bce7-7c7195c6a0e9",
+          "urls": [
+            "https://api.nva.unit.no/publication/file/01a19513bbba-14cf8795-c9bd-4551-bce7-7c7195c6a0e9"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R59.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/TCST.2024.3375023",
+        "https://api.nva.unit.no/publication/file/01a19513bbba-14cf8795-c9bd-4551-bce7-7c7195c6a0e9"
+      ]
+    },
+    {
+      "id": "R60",
+      "title": "Zheng et al.: occlusion-aware contingency planning",
+      "supplied_title": "Zheng et al. — Occlusion-Aware Contingency Safety-Critical Planning for Autonomous Driving",
+      "record_url": "https://doi.org/10.1109/TCYB.2025.3632366",
+      "metadata_title": "Occlusion-Aware Contingency Safety-Critical Planning for Autonomous Driving",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FTCYB.2025.3632366",
+      "metadata_request_error": null,
+      "doi": "10.1109/tcyb.2025.3632366",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              5
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R60.pdf",
+          "sha256": "5382627981dbb4a25887d35ec5c1100295b573cc0b6fe74b992a642abf411a0b",
+          "bytes": 5996617,
+          "pdf_pages": 14,
+          "source_url": "https://arxiv.org/pdf/2502.06359",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2502.06359",
+          "urls": [
+            "https://arxiv.org/pdf/2502.06359"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R60.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/TCYB.2025.3632366",
+        "https://arxiv.org/pdf/2502.06359"
+      ]
+    },
+    {
+      "id": "R61",
+      "title": "Ye et al., 2026: SCU-T-MPC",
+      "supplied_title": "Ye et al. — Risk-Aware and Socially Compliant Topological Motion Planning Under Uncertainty",
+      "record_url": "https://doi.org/10.1049/csy2.70051",
+      "metadata_title": "SCU‐T‐MPC: Risk‐Aware and Socially Compliant Topological Motion Planning Under Uncertainty",
+      "evidence_level": "C",
+      "review_scope": "Primary abstract/publication/project evidence; full paper not sufficiently accessible for in-depth verification.",
+      "full_text_review": false,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1049%2Fcsy2.70051",
+      "metadata_request_error": null,
+      "doi": "10.1049/csy2.70051",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              28
+            ]
+          ]
+        }
+      },
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "urls": [
+            "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/csy2.70051"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/csy2.70051",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ]
+        },
+        {
+          "status": "metadata_retrieved",
+          "requested_url": "https://api.openalex.org/works/https://doi.org/10.1049/csy2.70051"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1049/csy2.70051"
+      ],
+      "open_access_metadata_lookup": {
+        "id": "R61",
+        "requested_url": "https://api.openalex.org/works/https://doi.org/10.1049/csy2.70051",
+        "status": "metadata_retrieved",
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "diamond",
+          "oa_url": "https://doi.org/10.1049/csy2.70051",
+          "any_repository_has_fulltext": false
+        },
+        "locations": [
+          {
+            "pdf_url": null,
+            "landing_page_url": "https://doi.org/10.1049/csy2.70051",
+            "is_oa": true,
+            "version": "publishedVersion",
+            "license": "cc-by"
+          }
+        ]
+      }
+    },
+    {
+      "id": "R62",
+      "title": "Layered legged-robot coordination with reachable-set CBFs",
+      "supplied_title": "Safety-Critical Coordination of Legged Robots via Forward Reachable Set CBFs",
+      "record_url": "https://doi.org/10.1109/ICRA57147.2024.10610589",
+      "metadata_title": "Safety-Critical Coordination of Legged Robots via Layered Controllers and Forward Reachable Set based Control Barrier Functions",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.1109%2FICRA57147.2024.10610589",
+      "metadata_request_error": null,
+      "doi": "10.1109/icra57147.2024.10610589",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              13
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R62.pdf",
+          "sha256": "c72070a4b78521da54b9e372527defe8def619776aa0a028c111d23b7c4a4fb6",
+          "bytes": 6066351,
+          "pdf_pages": 7,
+          "source_url": "https://arxiv.org/pdf/2312.08689",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2312.08689",
+          "urls": [
+            "https://arxiv.org/pdf/2312.08689"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R62.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.1109/ICRA57147.2024.10610589",
+        "https://arxiv.org/pdf/2312.08689"
+      ]
+    },
+    {
+      "id": "R63",
+      "title": "Social navigation through constrained optimization",
+      "supplied_title": "Social Robot Navigation through Constrained Optimization: Uncertainty-Based Objectives and Constraints",
+      "record_url": "https://www.sciencedirect.com/science/article/pii/S0921889024002148",
+      "metadata_title": null,
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": "Downloaded 8-page public comparative-study preprint; expanded journal real-world sections not fully reviewed.",
+      "metadata_request_status": "failed",
+      "metadata_source": null,
+      "metadata_request_error": "HTTP Error 403: Forbidden",
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R63.pdf",
+          "sha256": "0302ac08fd8afd0a875a58d7a7b28a45bb75a8c70efd7e17365bbd0b09e518d3",
+          "bytes": 1420971,
+          "pdf_pages": 8,
+          "source_url": "https://arxiv.org/pdf/2305.02859",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2305.02859",
+          "urls": [
+            "https://arxiv.org/pdf/2305.02859"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R63.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S0921889024002148",
+        "https://arxiv.org/pdf/2305.02859"
+      ]
+    },
+    {
+      "id": "R64",
+      "title": "Arena 4.0",
+      "supplied_title": "Shcherbyna et al. — Arena 4.0 ROS2 Navigation Benchmark Platform",
+      "record_url": "https://arxiv.org/abs/2409.12471",
+      "metadata_title": "[2409.12471] Arena 4.0: A Comprehensive ROS2 Development and Benchmarking Platform for Human-centric Navigation Using Generative-Model-based Environment Generation",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2409.12471",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/Arena4.pdf",
+          "sha256": "fc8607c08dde3a861a56c001f77af82bae71bd8dfb044bb3aa83a3e486480e8c",
+          "bytes": 13487830,
+          "pdf_pages": 7,
+          "source_url": "https://arxiv.org/pdf/2409.12471",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2409.12471",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Arena4.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2409.12471",
+          "resolved_url": "https://arxiv.org/pdf/2409.12471",
+          "urls": [
+            "https://arxiv.org/pdf/2409.12471"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Arena4.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2409.12471",
+        "https://arxiv.org/pdf/2409.12471"
+      ]
+    },
+    {
+      "id": "R65",
+      "title": "Demonstrating Arena 5.0",
+      "supplied_title": "Shcherbyna et al. — Arena 5.0 ROS2 Social Navigation Benchmark",
+      "record_url": "https://arxiv.org/abs/2610.11220",
+      "metadata_title": "[2610.11220] Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": "Actual title begins Demonstrating Arena 5.0; arXiv upload date does not date every feature.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2610.11220",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/Arena5.pdf",
+          "sha256": "b725cba6ab9fda38e2cbfdbf49a75b2b900c7ba5157c398f3dd27188591780c8",
+          "bytes": 26733838,
+          "pdf_pages": 12,
+          "source_url": "https://arxiv.org/pdf/2610.11220",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2610.11220",
+          "resolved_url": "https://arxiv.org/pdf/2610.11220",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Arena5.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2610.11220",
+          "resolved_url": "https://arxiv.org/pdf/2610.11220",
+          "urls": [
+            "https://arxiv.org/pdf/2610.11220"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/Arena5.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2610.11220",
+        "https://arxiv.org/pdf/2610.11220"
+      ]
+    },
+    {
+      "id": "R66",
+      "title": "Pérez-Higueras et al.: HuNavSim",
+      "supplied_title": "Pérez-Higueras et al. — HuNavSim ROS 2 Human Navigation Simulator",
+      "record_url": "https://arxiv.org/abs/2305.01303",
+      "metadata_title": "[2305.01303] HuNavSim: A ROS 2 Human Navigation Simulator for Benchmarking Human-Aware Robot Navigation",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://arxiv.org/abs/2305.01303",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/HuNavSim.pdf",
+          "sha256": "5b44b2f40d7ffc95fbe83f19d8d8be36f9644175aa6483714781d57f53b7d3d3",
+          "bytes": 736297,
+          "pdf_pages": 8,
+          "source_url": "https://arxiv.org/pdf/2305.01303",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://arxiv.org/pdf/2305.01303",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/HuNavSim.pdf"
+        },
+        {
+          "status": "downloaded",
+          "source_url": "https://arxiv.org/pdf/2305.01303",
+          "resolved_url": "https://arxiv.org/pdf/2305.01303",
+          "urls": [
+            "https://arxiv.org/pdf/2305.01303"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/02_downloaded_open_pdfs/HuNavSim.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://arxiv.org/abs/2305.01303",
+        "https://arxiv.org/pdf/2305.01303"
+      ]
+    },
+    {
+      "id": "R67",
+      "title": "Alyassi et al., 2025: review and learning benchmark",
+      "supplied_title": "Social Robot Navigation: A Review and Benchmarking of Learning-Based Methods",
+      "record_url": "https://doi.org/10.3389/frobt.2025.1658643",
+      "metadata_title": "Social robot navigation: a review and benchmarking of learning-based methods",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "metadata_retrieved",
+      "metadata_source": "https://api.crossref.org/works/10.3389%2Ffrobt.2025.1658643",
+      "metadata_request_error": null,
+      "doi": "10.3389/frobt.2025.1658643",
+      "publication_dates": {
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              11
+            ]
+          ]
+        },
+        "published_online": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              11
+            ]
+          ]
+        }
+      },
+      "local_files": [
+        {
+          "path": "docs/references/03_additional_verified_pdfs/R67.pdf",
+          "sha256": "6cece8928d86567c0d3ccc1bf6405a433866dd8091685ecaf973ed6cbcb68566",
+          "bytes": 2166117,
+          "pdf_pages": 34,
+          "source_url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1658643/pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "source_url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1658643/pdf",
+          "resolved_url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1658643/pdf",
+          "urls": [
+            "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1658643/pdf"
+          ],
+          "attempt_errors": [],
+          "retained_path": "docs/references/03_additional_verified_pdfs/R67.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://doi.org/10.3389/frobt.2025.1658643",
+        "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1658643/pdf"
+      ]
+    },
+    {
+      "id": "R68",
+      "title": "Karwowski et al., 2024: requirements/planning/evaluation review",
+      "supplied_title": "Bridging Requirements, Planning, and Evaluation: A Review of Social Robot Navigation",
+      "record_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086376/",
+      "metadata_title": "Bridging Requirements, Planning, and Evaluation: A Review of Social Robot Navigation - PMC",
+      "evidence_level": "B",
+      "review_scope": "Selected method/evaluation full-text sections; not exhaustive review of every proof, appendix, or cited work.",
+      "full_text_review": true,
+      "version_notes": null,
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086376/",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [],
+      "retrieval_attempts": [
+        {
+          "status": "failed",
+          "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086376/pdf/sensors-24-02794.pdf",
+          "urls": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086376/pdf/sensors-24-02794.pdf"
+          ],
+          "attempt_errors": [
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086376/pdf/sensors-24-02794.pdf",
+              "error": "Not a PDF"
+            }
+          ]
+        }
+      ],
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086376/"
+      ],
+      "retrieved_page_hashes": [
+        {
+          "format": "html",
+          "sha256": "93407e753324a5142614ea3c4aca050f7e9ded24bf1b405a461a38e28d0ff793",
+          "local_snapshot_retained": false
+        }
+      ]
+    },
+    {
+      "id": "R69",
+      "title": "Nav2 MPPI, Jazzy documentation",
+      "supplied_title": "NVIDIA/ROS Nav2 — MPPI Controller Jazzy Documentation",
+      "record_url": "https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/controller_plugins/mppi_controller/configuring_mppic/",
+      "metadata_title": "Model Predictive Path Integral Controller - Nav2 Docs",
+      "evidence_level": "D",
+      "review_scope": "Versioned implementation documentation; not a research paper.",
+      "full_text_review": false,
+      "version_notes": "Jazzy-specific documentation, retrieved 2026-11-01.",
+      "metadata_request_status": "page_retrieved",
+      "metadata_source": "https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/controller_plugins/mppi_controller/configuring_mppic/",
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [],
+      "retrieval_attempts": [],
+      "primary_urls": [
+        "https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/controller_plugins/mppi_controller/configuring_mppic/"
+      ],
+      "retrieved_page_hashes": [
+        {
+          "format": "html",
+          "sha256": "8914701d2fb88624a3aaad893c4a261bfd6e0aac5739dfc2684f07f2646fa774",
+          "local_snapshot_retained": false
+        }
+      ]
+    },
+    {
+      "id": "R70",
+      "title": "ORCA-AVO: smooth differential-drive coordination",
+      "supplied_title": "Smooth Coordination and Navigation for Multiple Differential-Drive Robots",
+      "record_url": "https://gamma.cs.unc.edu/ORCA-AVO-DD/ORCA-AVO-DD.pdf",
+      "metadata_title": null,
+      "evidence_level": "A",
+      "review_scope": "Detailed review of main methods, relevant assumptions/equations, evaluation and limitations; not independent proof or benchmark reproduction.",
+      "full_text_review": true,
+      "version_notes": "Separate ORCA-AVO chapter from open_pdf_links; not another name for R14.",
+      "metadata_request_status": null,
+      "metadata_source": null,
+      "metadata_request_error": null,
+      "doi": null,
+      "publication_dates": {},
+      "local_files": [
+        {
+          "path": "docs/references/02_downloaded_open_pdfs/ORCA-AVO.pdf",
+          "sha256": "b2c7432255ccb6650267ba96be5d2be3a030c95fede15d43dbc9c15579794f1a",
+          "bytes": 932469,
+          "pdf_pages": 13,
+          "source_url": "https://gamma.cs.unc.edu/ORCA-AVO-DD/ORCA-AVO-DD.pdf",
+          "role": "paper"
+        }
+      ],
+      "retrieval_attempts": [
+        {
+          "status": "downloaded",
+          "requested_url": "https://gamma.cs.unc.edu/ORCA-AVO-DD/ORCA-AVO-DD.pdf",
+          "retained_path": "docs/references/02_downloaded_open_pdfs/ORCA-AVO.pdf"
+        }
+      ],
+      "primary_urls": [
+        "https://gamma.cs.unc.edu/ORCA-AVO-DD/ORCA-AVO-DD.pdf"
+      ]
+    }
+  ],
+  "limitations": [
+    "11 works have only abstract/project-level review; obtain full text before relying on their theorems.",
+    "Selected full-text review does not independently validate every appendix proof or reported result.",
+    "Preprint and journal versions may differ; R63 journal expansion was not fully reviewed.",
+    "Public URLs may later change; retained PDF hashes identify reviewed content."
+  ]
+}

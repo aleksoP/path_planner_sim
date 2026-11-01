@@ -3,14 +3,14 @@
 This document answers what each method actually optimizes, what it assumes, why
 it works, where it fails, and what is transferable to our differential-drive AMRs.
 Recommendations are our engineering judgment. Paper results retain their original
-robot models and test conditions. Supplemental sources are in [04_sources.md](04_sources.md).
+robot models and test conditions. Supplemental sources and subsequent corrections are in the [expanded review](deployment_review/01_paper_review.md).
 
 ## 1. Werling et al.: trajectory generation in a Frenet frame
 
 **Source W:** Moritz Werling, Julius Ziegler, Sören Kammel and Sebastian Thrun,
 *Optimal Trajectory Generation for Dynamic Street Scenarios in a Frenet Frame*,
 ICRA 2010, pp. 987-993, DOI `10.1109/ROBOT.2010.5509799`.
-[Supplied PDF](../references/%5BWerling%5D%20Optimal%20Trajectory%20Generation%20for%20Dynamic%20Street%20Scenarios%20in%20a%20Frenet%20Frame.pdf).
+[Supplied PDF](../references/01_existing_pdfs/01_Werling_2010_Frenet.pdf).
 
 ### 1.1 The actual problem and its structure
 
@@ -174,7 +174,7 @@ continuity constraints and a local chart, or switch to Cartesian planning. A
 90-degree bend can work well in Frenet **if** it has a valid rounded reference;
 an intersection is not automatically a Frenet failure and a spline is not
 automatically a safe route through a corner. See [the derived equations and
-code gaps](02_design.md#2-correct-frenet-geometry-for-this-codebase).
+code gaps](deployment_review/02_system_design.md#right-normal-frenet-conversion).
 
 ### 1.7 Collision handling and evidence
 
@@ -206,7 +206,7 @@ free-space/reverse recovery and bottleneck ordering outside this parameterizatio
 **Source T12:** Christoph Rösmann, Wendelin Feiten, Thomas Wösch, Frank Hoffmann
 and Torsten Bertram, *Trajectory Modification Considering Dynamic Constraints of
 Autonomous Robots*, ROBOTIK 2012, printed pp. 74-79.
-[Supplied PDF](../references/2012_rosmann_TEB%20Planner%20Trajectory%20modification%20considering%20dynamic%20constraints%20of%20autonomous%20robots%20%5BROBOTIK%202012%5D.pdf).
+[Supplied PDF](../references/01_existing_pdfs/02_Roesmann_2012_TEB.pdf).
 
 ### 2.1 Representation and optimization
 
@@ -300,7 +300,7 @@ package merely to obtain the method.
 **Source T17:** Christoph Rösmann, Frank Hoffmann and Torsten Bertram,
 *Kinodynamic Trajectory Optimization and Control for Car-Like Robots*, IROS 2017,
 pp. 5681-5686, DOI `10.1109/IROS.2017.8206458`.
-[Supplied PDF](../references/2017_Roesmann_IROS.pdf).
+[Supplied PDF](../references/01_existing_pdfs/03_Roesmann_2017_TEB.pdf).
 
 This is **not** *Integrated Online Trajectory Planning and Optimization in
 Distinctive Topologies*, a separate 2017 paper by the same authors. Treating
@@ -391,7 +391,7 @@ not require this entire solver.
 *Distributed Timed Elastic Band (DTEB) Planner: Trajectory Sharing and Collision
 Prediction for Multi-Robot Systems*, ICRA 2022, pp. 10702-10708,
 DOI `10.1109/ICRA46639.2022.9811762`; uploaded as arXiv v1 in March 2023.
-[Supplied PDF](../references/2303.11279v1.pdf).
+[Supplied PDF](../references/01_existing_pdfs/04_Chung_2022_DTEB.pdf).
 
 ### 4.1 What it adds beyond local TEB
 
@@ -518,7 +518,7 @@ repeat its reported fleet timing as our own budget.
 
 **Source O:** Jur van den Berg, Stephen J. Guy, Ming Lin and Dinesh Manocha,
 *Reciprocal n-body Collision Avoidance*.
-[Supplied 16-page manuscript](../references/ORCA.pdf). The author project lists
+[Supplied 16-page manuscript](../references/01_existing_pdfs/05_VanDenBerg_ORCA.pdf). The author project lists
 the work in the 2011 ISRR proceedings volume; the local PDF metadata predates
 that publication. Analyze the supplied manuscript's assumptions, rather than
 silently adding properties from later ORCA extensions.
@@ -589,7 +589,7 @@ There is a separate published **ORCA-DD** method, by Snape et al., with a
 specialized differential-drive construction and real iRobot Create experiments.
 It should be an additional baseline candidate, not treated as a property already
 proved by the supplied manuscript. The author project is linked in
-[04_sources.md](04_sources.md#s1-orca-dd).
+[the ORCA-DD review](deployment_review/01_paper_review.md#r14--orca-dd-differential-drive-constraints).
 
 ### 5.4 Geometry and non-cooperative agents
 
@@ -637,5 +637,5 @@ that entire candidate's possible motion.
 No paper removes the need to decide **who goes first**, establish **what was
 actually observed or communicated**, and verify **what the bounded actuator will
 execute**. The next useful design is the smallest set of separate components
-that closes those gaps. [02_design.md](02_design.md) gives that design and the
+that closes those gaps. [The updated design](deployment_review/02_system_design.md) gives that design and the
 experiments needed before judging it robust.

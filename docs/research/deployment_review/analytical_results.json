@@ -1,0 +1,100 @@
+{
+  "scope": "Illustrative analytical checks, not navigation experiments or safety certification",
+  "cv_ctrv": {
+    "v_mps": 1.0,
+    "yaw_rate_radps": 0.5,
+    "horizon_s": 3.0,
+    "cv_position_m": [
+      3.0,
+      0.0
+    ],
+    "ctrv_position_m": [
+      1.994989973208109,
+      1.8585255966645942
+    ],
+    "position_difference_m": 2.1128564900176547
+  },
+  "head_on_stop": {
+    "ego_speed_mps": 1.5,
+    "peer_speed_mps": 1.5,
+    "response_delay_s": 0.12,
+    "guaranteed_deceleration_mps2": 1.2,
+    "time_until_ego_stops_s": 1.37,
+    "ego_center_travel_m": 1.1175,
+    "nonbraking_peer_travel_m": 2.055,
+    "bumper_gap_until_ego_stop_with_clearance_m": 3.3225000000000002,
+    "both_brake_same_delay_gap_with_clearance_m": 2.385,
+    "caveat": "Bumper gaps exclude extra uncertainty. Nonbraking peer can still hit ego after ego stops."
+  },
+  "ellipse_plus_disc": {
+    "ellipse_axes_m": [
+      2.0,
+      0.2
+    ],
+    "disc_radius_m": 0.5,
+    "true_minkowski_support_m": 1.9212670403551895,
+    "axes_added_ellipse_support_m": 1.8357559750685817,
+    "support_shortfall_m": 0.08551106528660779
+  },
+  "mpcc_squared_radius_formula": {
+    "obstacle_circle_radius_m": 1.0,
+    "ego_circle_radius_m": 0.5,
+    "exclusion_radius_in_printed_formula_m": 1.118033988749895,
+    "required_circle_sum_radius_m": 1.5
+  },
+  "right_normal_frenet": [
+    {
+      "u": -1.5,
+      "curvature_formula": -0.5679510164763806,
+      "curvature_finite_difference": -0.567951014880313,
+      "curvature_error": 1.5960676114090688e-09,
+      "heading_error": 7.686209507404285e-10
+    },
+    {
+      "u": -0.3,
+      "curvature_formula": -0.2505566330143413,
+      "curvature_finite_difference": -0.25055662907760884,
+      "curvature_error": 3.936732440035229e-09,
+      "heading_error": 1.0673986833298343e-09
+    },
+    {
+      "u": 0.0,
+      "curvature_formula": -0.043672613394794245,
+      "curvature_finite_difference": -0.04367261206460277,
+      "curvature_error": 1.3301914777996693e-09,
+      "heading_error": 1.1106114639058973e-09
+    },
+    {
+      "u": 0.7,
+      "curvature_formula": 0.38500770625043135,
+      "curvature_finite_difference": 0.3850077108500851,
+      "curvature_error": 4.599653768977419e-09,
+      "heading_error": 1.335218199893795e-09
+    },
+    {
+      "u": 1.8,
+      "curvature_formula": 0.34554819066565556,
+      "curvature_finite_difference": 0.3455481893469874,
+      "curvature_error": 1.318668174654647e-09,
+      "heading_error": 4.275341192183646e-10
+    }
+  ],
+  "quintic_temporal_jerk_integral": {
+    "lateral_offset_m": 0.85,
+    "longitudinal_span_m": 3.2,
+    "integral_m2_per_s5_by_speed_mps": {
+      "0.5": 0.04844740033149717,
+      "1.0": 1.5503168106079095,
+      "1.5": 11.772718280553818
+    },
+    "ratio_1_5_to_0_5_mps": 243.0000000000001
+  },
+  "probability_accounting": {
+    "pointwise_failure_probability": 0.05,
+    "agent_count": 2,
+    "time_sample_count": 50,
+    "union_bound_episode_failure_upper_bound": 1.0,
+    "zero_events_in_3000_independent_trials_one_sided_95pct_upper": 0.0009980790119965555,
+    "caveat": "Union bound can be vacuous; trial calculation assumes independent identically distributed Bernoulli trials."
+  }
+}

@@ -1,5 +1,10 @@
 # Research review: cooperative planning for differential-drive AMRs
 
+**Updated collection review:** see [the 1 November 2026 deployment review](deployment_review/README.md)
+for all catalog entries, the final perception-only requirement, source coverage,
+and corrected safety/metric interpretations. The text below is the earlier
+five-paper review.
+
 Review date: 2026-10-30. Scope: all five supplied PDFs, the supplied GPT analysis,
 selected additional primary literature, and the current `planning_core` code.
 
@@ -18,9 +23,9 @@ evidence of reliable operation with limited perception, delays and loaded robots
 | Document | Contents |
 | --- | --- |
 | [Paper-by-paper analysis](01_papers.md) | Algorithms, equations, assumptions, experimental evidence, failure cases, and adoption decisions for all five PDFs; deeper treatment of Werling |
-| [Proposed AMR design and validation plan](02_design.md) | Current-code gaps, right-normal Frenet derivation, prediction, scheduling, fallback, interfaces, staged work and quantitative experiments |
-| [Assessment of the supplied GPT analysis](03_gpt_analysis_review.md) | Supported recommendations, corrections, bibliographic verification, and what is already implemented |
-| [Additional research and implementation sources](04_sources.md) | SIPP/SIPP-IP, continuous-time coordination, prediction research, original repositories and Nav2 boundaries |
+| [Proposed AMR design](deployment_review/02_system_design.md) and [validation roadmap](deployment_review/04_validation_roadmap.md) | Current-code gaps, right-normal Frenet derivation, prediction, fallback, interfaces, staged work and quantitative experiments |
+| [Assessment of the supplied GPT analysis](deployment_review/03_gpt_claims.md) | Supported recommendations, corrections, bibliographic verification, and what is already implemented |
+| [Expanded paper and implementation review](deployment_review/01_paper_review.md) | SIPP/SIPP-IP, continuous-time coordination, prediction research, original repositories and Nav2 boundaries |
 | [Reproducible analytical results](analytical_results.json) | Small calculations used to check design claims; not comparative robot benchmarks |
 | [Local PDF manifest](reference_manifest.json) | File identities and SHA-256 values for the five reviewed inputs |
 

@@ -1,0 +1,748 @@
+{
+  "generated": "2026-11-01",
+  "notes": "Five original PDFs from conversation are included. Other PDFs are outbound publisher/author/arXiv downloads and were NOT downloaded into this pack. Download helper requires normal internet connectivity.",
+  "existing_pdfs": [
+    {
+      "filename": "01_Werling_2010_Frenet.pdf",
+      "description": "Frenet trajectory generation",
+      "sha256": "de9509b3a69c8bc626279ca0a4dda2c746d77c24d94bea9ed6514e5488721028"
+    },
+    {
+      "filename": "02_Roesmann_2012_TEB.pdf",
+      "description": "Original timed elastic band",
+      "sha256": "f7159031d8be8f2fa1bd6029473dd14b570193f0ac8c71477594099e36a52fbd"
+    },
+    {
+      "filename": "03_Roesmann_2017_TEB.pdf",
+      "description": "Kinodynamic trajectory refinement (car-like)",
+      "sha256": "fcf707c1462b59f2c33954b4d52f349fc51e021497cfc73fc9c221b018aed13a"
+    },
+    {
+      "filename": "04_Chung_2022_DTEB.pdf",
+      "description": "Distributed timed trajectories (optional cooperation)",
+      "sha256": "850e3e9321e302666d5e30eea558327920fcc32cbbd9e74f82b09a48526fbbee"
+    },
+    {
+      "filename": "05_VanDenBerg_ORCA.pdf",
+      "description": "Independent reciprocal collision avoidance",
+      "sha256": "3738db18ea5d24aca1e483241db3cce1a068a7adbea4489d59b3ea542335a19a"
+    }
+  ],
+  "open_pdf_links": [
+    {
+      "id": "OA-MPC",
+      "title": "Occlusion-Aware MPC for Guaranteed Safe Robot Navigation With Unseen Dynamic Obstacles",
+      "pdf_url": "https://msl.stanford.edu/papers/firoozi_occlusion-aware_2022.pdf",
+      "group": "01_Sensor-only core",
+      "priority": "P0",
+      "why": "Unseen agents, reachable occupancy and terminal stop feasibility",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "ORCA-DD",
+      "title": "Smooth and Collision-Free Navigation for Multiple Robots Under Differential-Drive Constraints",
+      "pdf_url": "https://gamma.cs.unc.edu/ORCA-DD/ORCA-DD.pdf",
+      "group": "01_Sensor-only core",
+      "priority": "P0",
+      "why": "Reciprocal motion without communication, differential-drive kinematics",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "ORCA-AVO",
+      "title": "Smooth Coordination and Navigation for Multiple Differential-Drive Robots",
+      "pdf_url": "https://gamma.cs.unc.edu/ORCA-AVO-DD/ORCA-AVO-DD.pdf",
+      "group": "01_Sensor-only core",
+      "priority": "P0",
+      "why": "Acceleration-aware reciprocal collision avoidance",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "SIPP",
+      "title": "SIPP: Safe Interval Path Planning for Dynamic Environments",
+      "pdf_url": "https://www.cs.cmu.edu/~maxim/files/sipp_icra11.pdf",
+      "group": "01_Sensor-only core",
+      "priority": "P1",
+      "why": "Space-time route availability with dynamic obstacles",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "MPC-uncertainty",
+      "title": "Trajectory Planning with MPC for Obstacle Avoidance Considering Prediction Uncertainty",
+      "pdf_url": "https://arxiv.org/pdf/2504.19193",
+      "group": "01_Sensor-only core",
+      "priority": "P0",
+      "why": "Uncertainty-aware dynamic obstacle prediction with ROS 2/Nav2",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "Trepella",
+      "title": "Navigating the Crowd: Non-linear MPC with Social Forces Dynamics for Human-Aware Robot Navigation",
+      "pdf_url": "https://arxiv.org/pdf/2607.10374",
+      "group": "02_Interaction prediction",
+      "priority": "P0",
+      "why": "Robot-conditioned pedestrian motion inside MPC; Nav2 plugin",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "SICNav",
+      "title": "SICNav: Safe and Interactive Crowd Navigation using MPC and Bilevel Optimization",
+      "pdf_url": "https://arxiv.org/pdf/2310.10982",
+      "group": "02_Interaction prediction",
+      "priority": "P0",
+      "why": "Robot-conditioned prediction via ORCA based human-response model",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "SICNav-Diffusion",
+      "title": "SICNav-Diffusion: Safe and Interactive Crowd Navigation With Diffusion Trajectory Predictions",
+      "pdf_url": "https://arxiv.org/pdf/2503.08858",
+      "group": "02_Interaction prediction",
+      "priority": "P1",
+      "why": "Multimodal human trajectories and coupled planning",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "Trajectron++",
+      "title": "Trajectron++: Dynamically-Feasible Trajectory Forecasting With Heterogeneous Data",
+      "pdf_url": "https://arxiv.org/pdf/2001.03093",
+      "group": "02_Interaction prediction",
+      "priority": "P1",
+      "why": "Map-aware multi-hypothesis prediction; optional ego conditioning",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "Social-LSTM",
+      "title": "Social LSTM: Human Trajectory Prediction in Crowded Spaces",
+      "pdf_url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alahi_Social_LSTM_Human_CVPR_2016_paper.pdf",
+      "group": "02_Interaction prediction",
+      "priority": "P2",
+      "why": "Foundational model of human-agent interaction",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "D4orm",
+      "title": "D4orm: Multi-Robot Trajectories with Dynamics-aware Diffusion Denoised Deformations",
+      "pdf_url": "https://arxiv.org/pdf/2503.12204",
+      "group": "03_Trajectory planning",
+      "priority": "P1",
+      "why": "Anytime dynamical trajectory refinement including differential-drive models",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "ORCA-original",
+      "title": "Reciprocal n-body Collision Avoidance",
+      "pdf_url": "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf",
+      "group": "03_Trajectory planning",
+      "priority": "P1",
+      "why": "Foundational reciprocal velocity-obstacle analysis",
+      "mode": "onboard",
+      "included_local_copy": "05_VanDenBerg_ORCA.pdf"
+    },
+    {
+      "id": "PIBT",
+      "title": "Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding",
+      "pdf_url": "https://www.ijcai.org/Proceedings/2019/0076.pdf",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Local priority concepts; assumptions do not fit arbitrary factory agents",
+      "mode": "optional",
+      "included_local_copy": null
+    },
+    {
+      "id": "DTEB",
+      "title": "Distributed Timed Elastic Band Planner: Trajectory Sharing and Collision Prediction",
+      "pdf_url": "https://arxiv.org/pdf/2303.11279",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Communicated timed plans, future optional enhancement",
+      "mode": "optional",
+      "included_local_copy": "04_Chung_2022_DTEB.pdf"
+    },
+    {
+      "id": "RMADER",
+      "title": "Robust MADER: Decentralized Multiagent Trajectory Planner Robust to Communication Delay",
+      "pdf_url": "https://arxiv.org/pdf/2303.06222",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Delayed intent/commitment; optional robots with communications",
+      "mode": "optional",
+      "included_local_copy": null
+    },
+    {
+      "id": "LF",
+      "title": "LF: Online Multi-Robot Path Planning Meets Optimal Trajectory Control",
+      "pdf_url": "https://arxiv.org/pdf/2507.11464",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Global-knowledge multi-robot architecture comparison",
+      "mode": "optional",
+      "included_local_copy": null
+    },
+    {
+      "id": "CCBS",
+      "title": "Multi-Agent Pathfinding with Continuous Time",
+      "pdf_url": "https://ijcai.org/proceedings/2019/0006.pdf",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Continuous time conflict search; only if future coordination included",
+      "mode": "optional",
+      "included_local_copy": null
+    },
+    {
+      "id": "SIPP-Repair",
+      "title": "Real-Time Multi-Robot Motion Planning with Safe-Interval Search and Learning-Guided Repair",
+      "pdf_url": "https://ijcai.org/proceedings/2026/0842.pdf",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Learning-guided congestion repair; requires coordinated robots",
+      "mode": "optional",
+      "included_local_copy": null
+    },
+    {
+      "id": "Congestion",
+      "title": "Congestion Mitigation Path Planning for Large-Scale Multi-Agent Navigation",
+      "pdf_url": "https://arxiv.org/pdf/2508.05253",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Coarse traffic-aware routing, requires multi-agent context",
+      "mode": "optional",
+      "included_local_copy": null
+    },
+    {
+      "id": "EGO-Swarm",
+      "title": "EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System",
+      "pdf_url": "https://arxiv.org/pdf/2011.04183",
+      "group": "04_Optional group coordination",
+      "priority": "P2",
+      "why": "Local topology alternatives, aerial-model and communication caveats",
+      "mode": "optional",
+      "included_local_copy": null
+    },
+    {
+      "id": "HuNavSim",
+      "title": "HuNavSim: A ROS 2 Human Navigation Simulator for Benchmarking Human-Aware Robot Navigation",
+      "pdf_url": "https://arxiv.org/pdf/2305.01303",
+      "group": "05_Benchmarking",
+      "priority": "P1",
+      "why": "Reusable difficult pedestrian behavior scenarios for ROS 2",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "Arena4",
+      "title": "Arena 4.0: A ROS2 Development and Benchmarking Platform",
+      "pdf_url": "https://arxiv.org/pdf/2409.12471",
+      "group": "05_Benchmarking",
+      "priority": "P1",
+      "why": "Human-aware scenario generation, large PDF",
+      "mode": "onboard",
+      "included_local_copy": null
+    },
+    {
+      "id": "Arena5",
+      "title": "Arena 5.0: A ROS2 Social Navigation Benchmark",
+      "pdf_url": "https://arxiv.org/pdf/2610.11220",
+      "group": "05_Benchmarking",
+      "priority": "P1",
+      "why": "Modern scenario and evaluation tools, large PDF",
+      "mode": "onboard",
+      "included_local_copy": null
+    }
+  ],
+  "extended_catalog": [
+    {
+      "title": "Werling et al. — Optimal Trajectory Generation for Dynamic Street Scenarios in a Frenet Frame",
+      "record_url": "https://doi.org/10.1109/ROBOT.2010.5509799",
+      "metadata": "2010; P0",
+      "group": "Trajectory generation / control",
+      "summary": "Quintic lateral and quartic/quintic longitudinal maneuver families, replanning continuity."
+    },
+    {
+      "title": "Rösmann et al. — Trajectory Modification Considering Dynamic Constraints of Autonomous Robots",
+      "record_url": "https://github.com/rst-tu-dortmund/teb_local_planner",
+      "metadata": "2012; P1",
+      "group": "Trajectory generation / control",
+      "summary": "Pose/time optimization, local sparse factors, wheel/differential-drive constraints."
+    },
+    {
+      "title": "Rösmann et al. — Kinodynamic Trajectory Optimization and Control for Car-Like Robots",
+      "record_url": "https://doi.org/10.1109/IROS.2017.8206458",
+      "metadata": "2017; P2",
+      "group": "Trajectory generation / control",
+      "summary": "Warm-started SE(2) optimization and reverse seeds."
+    },
+    {
+      "title": "Xin et al. — Distributed Model Predictive Contouring Control for Real-Time Multi-Robot Motion Planning",
+      "record_url": "https://doi.org/10.23919/CSMS.2022.0017",
+      "metadata": "2022; P0",
+      "group": "Trajectory generation / control",
+      "summary": "Separate route progress from contouring error; robots share predicted routes."
+    },
+    {
+      "title": "Schöneberg et al. — Trajectory Planning with MPC for Obstacle Avoidance Considering Prediction Uncertainty",
+      "record_url": "https://doi.org/10.1016/j.ifacol.2025.10.245",
+      "metadata": "2025; P1",
+      "group": "Trajectory generation / control",
+      "summary": "ROS 2/Nav2-connected stochastic obstacle forecasting and chance-oriented MPC design."
+    },
+    {
+      "title": "Sun et al. — Integrated Multi-AMR CL-CBS and MPC-APF in Warehousing",
+      "record_url": "https://doi.org/10.1016/j.simpat.2025.103122",
+      "metadata": "2025; P2",
+      "group": "Trajectory generation / control",
+      "summary": "Discrete conflict search with continuous local replanning and tracking."
+    },
+    {
+      "title": "Zhang et al. — D4orm: Multi-Robot Trajectories with Dynamics-aware Diffusion Denoised Deformations",
+      "record_url": "https://arxiv.org/abs/2503.12204",
+      "metadata": "2025; P1",
+      "group": "Trajectory generation / control",
+      "summary": "Anytime trajectory refinement from dynamical rollout and stochastic denoising; no trained network required."
+    },
+    {
+      "title": "Shankar, Okumura and Prorok — LF: Online Multi-Robot Path Planning Meets Optimal Trajectory Control",
+      "record_url": "https://arxiv.org/abs/2507.11464",
+      "metadata": "2025; P0",
+      "group": "Trajectory generation / control",
+      "summary": "Asynchronous high-level MAPF plus low-level optimal trajectory controllers with real experiments."
+    },
+    {
+      "title": "Samavi et al. — SICNav-Diffusion: Safe and Interactive Crowd Navigation With Diffusion Trajectory Predictions",
+      "record_url": "https://doi.org/10.1109/LRA.2025.3585713",
+      "metadata": "2025; P1",
+      "group": "Trajectory generation / control",
+      "summary": "Multimodal joint pedestrian prediction coupled to a bilevel robot controller."
+    },
+    {
+      "title": "Trepella et al. — Navigating the Crowd: Non-linear MPC with Social Forces Dynamics",
+      "record_url": "https://arxiv.org/abs/2607.10374",
+      "metadata": "2026; P0",
+      "group": "Trajectory generation / control",
+      "summary": "Candidate-conditioned human response forecasts embedded in real-time NMPC."
+    },
+    {
+      "title": "Sun et al. — A Decoupled Time-Optimized Multi-Robot Path Parameterization Method",
+      "record_url": "https://doi.org/10.1007/s40747-025-02110-5",
+      "metadata": "2026; P1",
+      "group": "Trajectory generation / control",
+      "summary": "Separate path geometry and synchronized time parameterization under motion constraints."
+    },
+    {
+      "title": "Qu et al. — Safety Corridor and Pedestrian Prediction Integrated Sequential MPC",
+      "record_url": "https://doi.org/10.1177/17298806261483759",
+      "metadata": "2026; P1",
+      "group": "Trajectory generation / control",
+      "summary": "Corridor constraints, Kalman motion forecasting, occlusion/track-loss padding, fallback."
+    },
+    {
+      "title": "van den Berg et al. — Reciprocal n-body Collision Avoidance (ORCA)",
+      "record_url": "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf",
+      "metadata": "2011; P1",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Fast reciprocal velocity-obstacle baseline with explicit theoretical conditions."
+    },
+    {
+      "title": "Snape et al. — ORCA for Differential-Drive Robots (ORCA-DD)",
+      "record_url": "https://gamma-web.iacs.umd.edu/ORCA-DD/",
+      "metadata": "2010; P1",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Nonholonomic reciprocal-avoidance adaptation; more suitable benchmark than clamped ORCA."
+    },
+    {
+      "title": "Zhou et al. — Fast On-line Collision Avoidance for Dynamic Vehicles Using Buffered Voronoi Cells",
+      "record_url": "https://msl.stanford.edu/bibliography/zhou_fast_2017",
+      "metadata": "2017; P2",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Lightweight localized convex safe regions from neighboring positions."
+    },
+    {
+      "title": "Wang and Schwager — Distributed Collision Avoidance with Probabilistic Buffered Voronoi Cells",
+      "record_url": "https://msl.stanford.edu/bibliography/wang_distributed_2019",
+      "metadata": "2019; P2",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Explicitly treats relative-state uncertainty in reciprocal safe cell construction."
+    },
+    {
+      "title": "Zhu, Brito and Alonso-Mora — Decentralized Probabilistic Multi-Robot Collision Avoidance with Buffered Uncertainty-aware Voronoi Cells",
+      "record_url": "https://github.com/tud-amr/mrca_vc",
+      "metadata": "2022; P1",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Differential-drive simulation examples and uncertainty-aware buffered cells."
+    },
+    {
+      "title": "Zhou et al. — EGO-Swarm: Fully Autonomous and Decentralized Quadrotor Swarm",
+      "record_url": "https://arxiv.org/abs/2011.04183",
+      "metadata": "2021; P1",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Fast asynchronous trajectory exchange, multi-topology seeds, lightweight optimization."
+    },
+    {
+      "title": "Tordesillas et al. — MADER: Trajectory Planner in Multiagent and Dynamic Environments",
+      "record_url": "https://doi.org/10.1109/TRO.2021.3080235",
+      "metadata": "2022; P1",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Committed trajectories, separating hyperplanes, collision checking/rechecking."
+    },
+    {
+      "title": "Kondo et al. — Robust MADER: Decentralized Multiagent Trajectory Planner Robust to Communication Delay",
+      "record_url": "https://arxiv.org/abs/2303.06222",
+      "metadata": "2024; P0",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Two-phase trajectory publication, delay check, committed trajectory compatibility."
+    },
+    {
+      "title": "Chung et al. — Distributed Timed Elastic Band (DTEB) Planner",
+      "record_url": "https://arxiv.org/abs/2303.11279",
+      "metadata": "2022; P0",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Arbitrary time-indexed peer intentions, priority and topology-aware multi-robot passing."
+    },
+    {
+      "title": "IFAC — Distributed MPC for Safety-Critical Obstacle Avoidance with Social Preferences",
+      "record_url": "https://doi.org/10.1016/j.ifacol.2025.11.587",
+      "metadata": "2025; P2",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "Asymmetric responsibility allocation and control barrier constraints for nonholonomic robots."
+    },
+    {
+      "title": "Muhammed et al. — Real-time Decentralized MPC for Cooperative Multi-Robot Object Transport",
+      "record_url": "https://doi.org/10.1038/s41598-026-41881-w",
+      "metadata": "2026; P2",
+      "group": "Distributed multi-robot avoidance",
+      "summary": "ROS2 physical experiments, event-triggered communication, differential-drive MPC."
+    },
+    {
+      "title": "Phillips and Likhachev — SIPP: Safe Interval Path Planning for Dynamic Environments",
+      "record_url": "https://www.cs.cmu.edu/~maxim/files/sipp_icra11.pdf",
+      "metadata": "2011; P0",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Time intervals for available corridor/intersection occupancy."
+    },
+    {
+      "title": "Ali and Yakovlev — Safe Interval Path Planning with Kinodynamic Constraints (SIPP-IP)",
+      "record_url": "https://doi.org/10.1609/aaai.v37i10.26453",
+      "metadata": "2023; P0",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Safe-interval search with acceleration and deceleration limitations."
+    },
+    {
+      "title": "Kasaura et al. — Prioritized SIPP with Continuous Time on 2D Roadmaps (PSIPP/CTC)",
+      "record_url": "https://doi.org/10.1109/LRA.2022.3187265",
+      "metadata": "2022; P0",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Precomputed roadmap conflict intervals, feasible coordination on fixed warehouse graph."
+    },
+    {
+      "title": "Andreychuk et al. — Multi-Agent Pathfinding with Continuous Time (CCBS)",
+      "record_url": "https://ijcai.org/proceedings/2019/6",
+      "metadata": "2019; P1",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Continuous-time conflict splitting, small-group reference solver."
+    },
+    {
+      "title": "Tan et al. — Robust Multi-Agent Pathfinding with Continuous Time",
+      "record_url": "https://doi.org/10.1609/icaps.v34i1.31519",
+      "metadata": "2024; P0",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Bounded execution delay robustness for continuous-time multiagent plans."
+    },
+    {
+      "title": "Okumura et al. — Priority Inheritance with Backtracking (PIBT)",
+      "record_url": "https://www.ijcai.org/Proceedings/2019/0076.pdf",
+      "metadata": "2019; P1",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Fast, adaptive local priority handoff and backtracking."
+    },
+    {
+      "title": "Li et al. — Lifelong MAPF in Large-Scale Warehouses (RHCR)",
+      "record_url": "https://doi.org/10.1609/aaai.v35i13.17344",
+      "metadata": "2021; P1",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Rolling-horizon conflict resolution for repeated warehouse missions."
+    },
+    {
+      "title": "Li et al. — MAPF-LNS2: Fast Repairing via Large Neighborhood Search",
+      "record_url": "https://doi.org/10.1609/aaai.v36i9.21266",
+      "metadata": "2022; P1",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Repair only colliding subset rather than replanning every robot."
+    },
+    {
+      "title": "Huang et al. — Anytime MAPF via ML-Guided Large Neighborhood Search",
+      "record_url": "https://doi.org/10.1609/aaai.v36i9.21168",
+      "metadata": "2022; P3",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Use learning for choosing productive conflict-repair subsets."
+    },
+    {
+      "title": "Okumura — LaCAM: Search-Based Algorithm for Quick Multi-Agent Pathfinding",
+      "record_url": "https://doi.org/10.1609/aaai.v37i10.26377",
+      "metadata": "2023; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "High scalability with lazy constraints."
+    },
+    {
+      "title": "Okumura — Improving LaCAM for Scalable Eventually Optimal MAPF",
+      "record_url": "https://ijcai.org/proceedings/2023/28",
+      "metadata": "2023; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Anytime MAPF search with fast initial routes and later improvement."
+    },
+    {
+      "title": "Kato et al. — Congestion Mitigation Path Planning for Large-Scale Multi-Agent Navigation",
+      "record_url": "https://arxiv.org/abs/2508.05253",
+      "metadata": "2025; P1",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Spread route demand away from shared congestion hotspots proactively."
+    },
+    {
+      "title": "Amir et al. — ReCoDe: RL-Based Dynamic Constraint Design for Multi-Agent Coordination",
+      "record_url": "https://proceedings.mlr.press/v305/amir25a.html",
+      "metadata": "2025; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Learn auxiliary coordination constraints while retaining model-based controllers."
+    },
+    {
+      "title": "Okumura et al. — Concrete Multi-Agent Path Planning Enabling Kinodynamically Aggressive Maneuvers",
+      "record_url": "https://www.nature.com/articles/s44182-026-00083-2",
+      "metadata": "2026; P0",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "MAPF with execution constraints (MAPF-X), control-compatible dense robot coordination; 40-robot physical demo."
+    },
+    {
+      "title": "Kim et al. — A Scalable Framework for Lifelong MAPF with Asynchronous Actions",
+      "record_url": "https://doi.org/10.1109/TII.2026.3681327",
+      "metadata": "2026; P0",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Separate path planning and precedence-based action scheduling under nonuniform durations."
+    },
+    {
+      "title": "Zheng et al. — Learning-guided Prioritized Planning for Lifelong MAPF in Warehouse Automation",
+      "record_url": "https://doi.org/10.1613/jair.1.20611",
+      "metadata": "2026; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Neural assignment of planning order on top of conventional prioritized search."
+    },
+    {
+      "title": "Klančar et al. — Elevating Priorities for Efficient Lifelong Multi-AGV Pathfinding on Roadmaps",
+      "record_url": "https://doi.org/10.1016/j.robot.2025.105295",
+      "metadata": "2026; P1",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Safe locations and priority logic in lifelong roadmap coordination."
+    },
+    {
+      "title": "Tang et al. — Greedy Priority Inheritance with Backtracking",
+      "record_url": "https://doi.org/10.1109/TASE.2026.3703194",
+      "metadata": "2026; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Faster priority backflow for dense interactions."
+    },
+    {
+      "title": "Arita and Okumura — Local Guidance for Configuration-Based Multi-Agent Pathfinding",
+      "record_url": "https://doi.org/10.1609/aaai.v40i35.40169",
+      "metadata": "2026; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Local congestion-aware spatiotemporal guidance for dense map search."
+    },
+    {
+      "title": "Jain et al. — Graph Attention-Guided Search for Dense Multi-Agent Pathfinding (LaGAT)",
+      "record_url": "https://doi.org/10.1609/aaai.v40i35.40192",
+      "metadata": "2026; P3",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Learned GNN heuristic guiding robust classical search in dense graphs."
+    },
+    {
+      "title": "Arita and Okumura — Lifelong LaCAM with Local Guidance",
+      "record_url": "https://doi.org/10.1609/socs.v19i1.43067",
+      "metadata": "2026; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Reuse warm-started spatiotemporal guidance under repeated new tasks."
+    },
+    {
+      "title": "Kumar et al. — Real-Time Multi-Robot Motion Planning with Safe-Interval Search and Learning-Guided Repair",
+      "record_url": "https://ijcai.org/proceedings/2026/842",
+      "metadata": "2026; P1",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "SIPP-PP plus LNS conflict repair and action-order exploration."
+    },
+    {
+      "title": "Huang et al. — SMART: Scalable Multi-Agent Reasoning and Trajectory Planning in Dense Environments",
+      "record_url": "https://doi.org/10.1016/j.trc.2026.105793",
+      "metadata": "2026; P2",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Hierarchical priority reasoning and corridor-based trajectory refinement for dense vehicles."
+    },
+    {
+      "title": "Guo et al. — Collision Risk Index and Dynamic Priority in Multi-Robot Cooperative Planning",
+      "record_url": "https://doi.org/10.1016/j.robot.2026.105592",
+      "metadata": "2026; P3",
+      "group": "Traffic scheduling / MAPF",
+      "summary": "Dynamic priorities and staged multi-robot conflict resolution."
+    },
+    {
+      "title": "Salzmann et al. — Trajectron++: Dynamically-Feasible Trajectory Forecasting with Heterogeneous Data",
+      "record_url": "https://arxiv.org/abs/2001.03093",
+      "metadata": "2020; P2",
+      "group": "Prediction / interaction",
+      "summary": "Multimodal, map-conditioned, interaction-aware and optionally ego-conditioned trajectories."
+    },
+    {
+      "title": "Sun et al. — M2I: From Factored Marginal to Interactive Trajectory Prediction",
+      "record_url": "https://openaccess.thecvf.com/content/CVPR2022/html/Sun_M2I_From_Factored_Marginal_Trajectory_Prediction_to_Interactive_Prediction_CVPR_2022_paper.html",
+      "metadata": "2022; P2",
+      "group": "Prediction / interaction",
+      "summary": "Influencer/reactor modeling for agents whose actions change each other."
+    },
+    {
+      "title": "Alahi et al. — Social LSTM: Human Trajectory Prediction in Crowded Spaces",
+      "record_url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alahi_Social_LSTM_Human_CVPR_2016_paper.pdf",
+      "metadata": "2016; P3",
+      "group": "Prediction / interaction",
+      "summary": "Foundational social-interaction-aware pedestrian forecasting."
+    },
+    {
+      "title": "Gupta et al. — Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks",
+      "record_url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf",
+      "metadata": "2018; P3",
+      "group": "Prediction / interaction",
+      "summary": "Multiple human future modes; diversity as a baseline."
+    },
+    {
+      "title": "Yang et al. — IA-LSTM: Interaction-Aware LSTM for Pedestrian Trajectory Prediction",
+      "record_url": "https://doi.org/10.1109/TCYB.2024.3359237",
+      "metadata": "2024; P3",
+      "group": "Prediction / interaction",
+      "summary": "Attention to variable interpersonal interaction importance."
+    },
+    {
+      "title": "Samavi et al. — SICNav: Interactive Crowd Navigation with Bilevel Optimization",
+      "record_url": "https://arxiv.org/abs/2310.10982",
+      "metadata": "2024; P0",
+      "group": "Prediction / interaction",
+      "summary": "Predict human response through embedded ORCA model inside MPC, with real tests."
+    },
+    {
+      "title": "Autoware — Map-Based Prediction Implementation (versioned documentation)",
+      "record_url": "https://autowarefoundation.github.io/autoware_universe/refs-tags-v1.0/perception/map_based_prediction/",
+      "metadata": "2024; P0",
+      "group": "Prediction / interaction",
+      "summary": "Practical track history, map-branch association, maneuvers, predicted paths."
+    },
+    {
+      "title": "Qiu and Liu — Intent-Aware Spatiotemporal Risk Field for Multi-AGV Planning",
+      "record_url": "https://doi.org/10.1007/s44443-026-00997-9",
+      "metadata": "2026; P1",
+      "group": "Prediction / interaction",
+      "summary": "Separate cooperating peer intentions from heterogeneous outside-obstacle forecasting."
+    },
+    {
+      "title": "Meng et al. — Risk-Aware Multi-Modal Pedestrian Prediction with Scene-Attentive Social Attention",
+      "record_url": "https://doi.org/10.1049/itr2.70252",
+      "metadata": "2026; P3",
+      "group": "Prediction / interaction",
+      "summary": "Forecast spatial risk beyond average displacement accuracy."
+    },
+    {
+      "title": "Pan et al. — Mixed Crowd Navigation: Perception, Interaction, Planning, and Control (survey)",
+      "record_url": "https://doi.org/10.1146/annurev-control-032024-023929",
+      "metadata": "2026; P2",
+      "group": "Prediction / interaction",
+      "summary": "Comprehensive survey organizing perception–interaction–planning–control."
+    },
+    {
+      "title": "Firoozi et al. — OA-MPC: Occlusion-Aware MPC for Guaranteed Safe Robot Navigation with Unseen Dynamic Obstacles",
+      "record_url": "https://arxiv.org/abs/2211.09156",
+      "metadata": "2025; P0",
+      "group": "Safety / occlusion",
+      "summary": "Forward reachable occupancy for unseen agents and terminal stop for recursive feasibility."
+    },
+    {
+      "title": "Haraldsen et al. — Theoretical Analysis of Velocity Obstacle Method for Nonholonomic Vehicles",
+      "record_url": "https://doi.org/10.1109/TCST.2024.3375023",
+      "metadata": "2024; P1",
+      "group": "Safety / occlusion",
+      "summary": "Analyzes avoidance feasibility with vehicle dynamics instead of assuming ideal planar velocity."
+    },
+    {
+      "title": "Zheng et al. — Occlusion-Aware Contingency Safety-Critical Planning for Autonomous Driving",
+      "record_url": "https://doi.org/10.1109/TCYB.2025.3632366",
+      "metadata": "2026; P1",
+      "group": "Safety / occlusion",
+      "summary": "Phantom-agent reachable sets and contingency speed bounds."
+    },
+    {
+      "title": "Ye et al. — Risk-Aware and Socially Compliant Topological Motion Planning Under Uncertainty",
+      "record_url": "https://doi.org/10.1049/csy2.70051",
+      "metadata": "2026; P2",
+      "group": "Safety / occlusion",
+      "summary": "Multiple topology classes and uncertain human motion in chance-constrained local optimization."
+    },
+    {
+      "title": "Safety-Critical Coordination of Legged Robots via Forward Reachable Set CBFs",
+      "record_url": "https://doi.org/10.1109/ICRA57147.2024.10610589",
+      "metadata": "2024; P3",
+      "group": "Safety / occlusion",
+      "summary": "Reachability-informed layered safety filter and tracking."
+    },
+    {
+      "title": "Social Robot Navigation through Constrained Optimization: Uncertainty-Based Objectives and Constraints",
+      "record_url": "https://www.sciencedirect.com/science/article/pii/S0921889024002148",
+      "metadata": "2024; P2",
+      "group": "Safety / occlusion",
+      "summary": "Simulation and physical evaluation of uncertainty-aware social MPC constraints."
+    },
+    {
+      "title": "Shcherbyna et al. — Arena 4.0 ROS2 Navigation Benchmark Platform",
+      "record_url": "https://arxiv.org/abs/2409.12471",
+      "metadata": "2024; P1",
+      "group": "Benchmark / implementation",
+      "summary": "Generated worlds/scenarios and ROS2 comparison workflow."
+    },
+    {
+      "title": "Shcherbyna et al. — Arena 5.0 ROS2 Social Navigation Benchmark",
+      "record_url": "https://arxiv.org/abs/2610.11220",
+      "metadata": "2026; P1",
+      "group": "Benchmark / implementation",
+      "summary": "Comprehensive generated scenarios, standardized benchmark metrics, expanded simulator support."
+    },
+    {
+      "title": "Pérez-Higueras et al. — HuNavSim ROS 2 Human Navigation Simulator",
+      "record_url": "https://arxiv.org/abs/2305.01303",
+      "metadata": "2023; P1",
+      "group": "Benchmark / implementation",
+      "summary": "Configurable pedestrian behaviors and social navigation metrics."
+    },
+    {
+      "title": "Social Robot Navigation: A Review and Benchmarking of Learning-Based Methods",
+      "record_url": "https://doi.org/10.3389/frobt.2025.1658643",
+      "metadata": "2025; P2",
+      "group": "Benchmark / implementation",
+      "summary": "Taxonomy of social navigators, comparison datasets, tools and sensing modalities."
+    },
+    {
+      "title": "Bridging Requirements, Planning, and Evaluation: A Review of Social Robot Navigation",
+      "record_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086376/",
+      "metadata": "2024; P2",
+      "group": "Benchmark / implementation",
+      "summary": "Taxonomy of safety/social evaluation metrics and simulator benchmarks."
+    },
+    {
+      "title": "NVIDIA/ROS Nav2 — MPPI Controller Jazzy Documentation",
+      "record_url": "https://docs.nav2.org/jazzy/configuration_and_development/configuration_guide/controller_plugins/mppi_controller/configuring_mppic/",
+      "metadata": "2026; P0",
+      "group": "Benchmark / implementation",
+      "summary": "Practical controller integration and critic extension points."
+    }
+  ]
+}

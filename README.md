@@ -5,6 +5,10 @@ deformation. The reusable `planning_core` has no simulator, JSON, ROS, Python,
 Nav2, Gazebo, or MuJoCo dependencies. This directory is isolated from the production
 navigation packages elsewhere in the workspace.
 
+The [deployment research review](docs/research/deployment_review/README.md)
+assesses the reference collection, the supplied GPT discussion, and the current
+code, with a perception-only architecture and staged validation roadmap.
+
 ## Build and verify
 
 On Ubuntu 24.04 install the build dependencies (if absent):
